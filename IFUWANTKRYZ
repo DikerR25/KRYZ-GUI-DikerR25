@@ -11,22 +11,22 @@
 
 print("Thank you for using KRYZ-GUI")
 
+
+-- Notification - Loaded |
+
+sendNotice=game.ReplicatedStorage.Notices.SendUserNotice;sendNotice:Fire("This GUI was made by KRYZ / DikerR25!")
+
 game.Lighting.Changed:connect(function()
 	game.Lighting.TimeOfDay = "12:00:00"
 	game.Lighting.FogEnd = 9999
 	game.Lighting.Brightness = 1
 end)
 
--- Notification - Loaded |
-
-sendNotice=game.ReplicatedStorage.Notices.SendUserNotice;sendNotice:Fire("This GUI was made by KRYZ / DikerR25!")
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "KRYZ-GUI";
 	Text = "Made by KRYZ/DikerR25";
 })
-
-
 
 -- Instances:
 
@@ -34,7 +34,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
-
 local ScreenGui = Instance.new("ScreenGui")
 local framegui = Instance.new("Frame")
 local scrollmenu = Instance.new("ScrollingFrame")
@@ -42,16 +41,136 @@ local buttonguiinfo = Instance.new("TextButton")
 local misccharacter = Instance.new("TextButton")
 local miscland = Instance.new("TextButton")
 local miscwaypoint = Instance.new("TextButton")
+local teleportbutton = Instance.new("TextButton")
 local frameinfo = Instance.new("Frame")
 local textguiinfo = Instance.new("TextLabel")
 local bgguiinfo = Instance.new("Frame")
 local Frameguiby = Instance.new("Frame")
 local guiby = Instance.new("TextLabel")
+local freeland = Instance.new("TextButton")
+local maxland = Instance.new("TextButton")
+local playertpplace = Instance.new("TextButton")
+local playertp = Instance.new("TextLabel")
+local nameplayer = Instance.new("TextBox")
+local listplayerbut = Instance.new("TextButton")
 local Frameui = Instance.new("Frame")
 local uiby = Instance.new("TextLabel")
+local openguidonatebase = Instance.new("TextButton")
+local donatebasetext = Instance.new("TextLabel")
+local playertpwood = Instance.new("TextButton")
+local tptowood = Instance.new("TextLabel")
+local tptoplayer = Instance.new("TextButton")
+local tptobase = Instance.new("TextButton")
 local Frametest = Instance.new("Frame")
 local test = Instance.new("TextLabel")
+local Dupe = Instance.new("TextButton")
+local SL = Instance.new("TextButton")
+local tpcarplace = Instance.new("TextButton")
+local cartotp = Instance.new("TextLabel")
+local koordinat = Instance.new("TextBox")
 local Frame = Instance.new("Frame")
+local load = Instance.new("TextButton")
+local loadbase = Instance.new("TextBox")
+local textcartptowood = Instance.new("TextLabel")
+local tpcarwood = Instance.new("TextButton")
+local tptokoordinat = Instance.new("TextButton")
+local setkoordinat = Instance.new("TextButton")
+local SF = Instance.new("ScrollingFrame")
+local Frame_2 = Instance.new("Frame")
+local S5 = Instance.new("TextButton")
+local S6 = Instance.new("TextButton")
+local S4 = Instance.new("TextButton")
+local S1 = Instance.new("TextButton")
+local S3 = Instance.new("TextButton")
+local S2 = Instance.new("TextButton")
+local framedonateslot = Instance.new("ScrollingFrame")
+local Frame_3 = Instance.new("Frame")
+local slot5 = Instance.new("TextButton")
+local slot6 = Instance.new("TextButton")
+local slot4 = Instance.new("TextButton")
+local slot1 = Instance.new("TextButton")
+local slot3 = Instance.new("TextButton")
+local slot2 = Instance.new("TextButton")
+local closedonateslot = Instance.new("TextButton")
+local textland = Instance.new("TextLabel")
+local Scrollingtpwood = Instance.new("ScrollingFrame")
+local Birch = Instance.new("TextButton")
+local Cherry = Instance.new("TextButton")
+local Generic = Instance.new("TextButton")
+local Green = Instance.new("TextButton")
+local Koa = Instance.new("TextButton")
+local Gold = Instance.new("TextButton")
+local Fir = Instance.new("TextButton")
+local CaveCrawler = Instance.new("TextButton")
+local LoneCave = Instance.new("TextButton")
+local Oak = Instance.new("TextButton")
+local Palm = Instance.new("TextButton")
+local Pine = Instance.new("TextButton")
+local SnowGlow = Instance.new("TextButton")
+local Volcano = Instance.new("TextButton")
+local Walnut = Instance.new("TextButton")
+local closescrolltpwood = Instance.new("TextButton")
+local Frost = Instance.new("TextButton")
+local Scrollingtpwoodcar = Instance.new("ScrollingFrame")
+local Birchcar = Instance.new("TextButton")
+local Cherrycar = Instance.new("TextButton")
+local Genericcar = Instance.new("TextButton")
+local Greencar = Instance.new("TextButton")
+local Koacar = Instance.new("TextButton")
+local Goldcar = Instance.new("TextButton")
+local Fircar = Instance.new("TextButton")
+local CaveCrawlercar = Instance.new("TextButton")
+local LoneCavecar = Instance.new("TextButton")
+local Oakcar = Instance.new("TextButton")
+local Palmcar = Instance.new("TextButton")
+local Pinecar = Instance.new("TextButton")
+local SnowGlowcar = Instance.new("TextButton")
+local Volcanocar = Instance.new("TextButton")
+local Walnutcar = Instance.new("TextButton")
+local closescrolltpwoodcar = Instance.new("TextButton")
+local Frostcar = Instance.new("TextButton")
+local scrolltpplace = Instance.new("ScrollingFrame")
+local WoodRUs = Instance.new("TextButton")
+local PowerShop = Instance.new("TextButton")
+local LogicShop = Instance.new("TextButton")
+local BobsShack = Instance.new("TextButton")
+local LandStore = Instance.new("TextButton")
+local ArtsShop = Instance.new("TextButton")
+local BoxedCar = Instance.new("TextButton")
+local Furnishings = Instance.new("TextButton")
+local TheDen = Instance.new("TextButton")
+local SkiLodge = Instance.new("TextButton")
+local ShrineOfSight = Instance.new("TextButton")
+local Bridge = Instance.new("TextButton")
+local Dock = Instance.new("TextButton")
+local Spawnpoint = Instance.new("TextButton")
+local closeframetpplace = Instance.new("TextButton")
+local scrolltpplacecar = Instance.new("ScrollingFrame")
+local WoodRUs_2 = Instance.new("TextButton")
+local PowerShop_2 = Instance.new("TextButton")
+local LogicShop_2 = Instance.new("TextButton")
+local BobsShack_2 = Instance.new("TextButton")
+local LandStore_2 = Instance.new("TextButton")
+local ArtsShop_2 = Instance.new("TextButton")
+local BoxedCar_2 = Instance.new("TextButton")
+local Furnishings_2 = Instance.new("TextButton")
+local TheDen_2 = Instance.new("TextButton")
+local SkiLodge_2 = Instance.new("TextButton")
+local ShrineOfSight_2 = Instance.new("TextButton")
+local Bridge_2 = Instance.new("TextButton")
+local Dock_2 = Instance.new("TextButton")
+local Spawnpoint_2 = Instance.new("TextButton")
+local closeframetpplacecar = Instance.new("TextButton")
+local waypoint = Instance.new("TextLabel")
+local teleport = Instance.new("TextLabel")
+local listtele = Instance.new("Frame")
+local player1 = Instance.new("TextButton")
+local player3 = Instance.new("TextButton")
+local player2 = Instance.new("TextButton")
+local listname = Instance.new("TextLabel")
+local player4 = Instance.new("TextButton")
+local player5 = Instance.new("TextButton")
+local player6 = Instance.new("TextButton")
 local scrollchar = Instance.new("ScrollingFrame")
 local Framechar = Instance.new("Frame")
 local Framews = Instance.new("Frame")
@@ -95,121 +214,6 @@ local antiafktext = Instance.new("TextLabel")
 local antiafk = Instance.new("TextButton")
 local help = Instance.new("TextButton")
 local textchar = Instance.new("TextLabel")
-local frameland = Instance.new("Frame")
-local textland = Instance.new("TextLabel")
-local bgland = Instance.new("Frame")
-local Frameland = Instance.new("Frame")
-local freeland = Instance.new("TextButton")
-local maxland = Instance.new("TextButton")
-local framedupebase = Instance.new("Frame")
-local donatebasetext = Instance.new("TextLabel")
-local openguidonatebase = Instance.new("TextButton")
-local framefakeload = Instance.new("Frame")
-local load = Instance.new("TextButton")
-local loadbase = Instance.new("TextBox")
-local framedupemoney = Instance.new("Frame")
-local Dupe = Instance.new("TextButton")
-local SL = Instance.new("TextButton")
-local framedonateslot = Instance.new("ScrollingFrame")
-local Frame_2 = Instance.new("Frame")
-local slot5 = Instance.new("TextButton")
-local slot6 = Instance.new("TextButton")
-local slot4 = Instance.new("TextButton")
-local slot1 = Instance.new("TextButton")
-local slot3 = Instance.new("TextButton")
-local slot2 = Instance.new("TextButton")
-local closedonateslot = Instance.new("TextButton")
-local SF = Instance.new("ScrollingFrame")
-local Frame_3 = Instance.new("Frame")
-local S5 = Instance.new("TextButton")
-local S6 = Instance.new("TextButton")
-local S4 = Instance.new("TextButton")
-local S1 = Instance.new("TextButton")
-local S3 = Instance.new("TextButton")
-local S2 = Instance.new("TextButton")
-local frameway = Instance.new("Frame")
-local waypoint = Instance.new("TextLabel")
-local bgway = Instance.new("Frame")
-local frameplayertp = Instance.new("Frame")
-local playertp = Instance.new("TextLabel")
-local playertpplace = Instance.new("TextButton")
-local frameplayertpwood = Instance.new("Frame")
-local tptowood = Instance.new("TextLabel")
-local playertpwood = Instance.new("TextButton")
-local framecartp = Instance.new("Frame")
-local cartotp = Instance.new("TextLabel")
-local tpcarplace = Instance.new("TextButton")
-local framecartpwood = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local tpcarwood = Instance.new("TextButton")
-local scrolltpplace = Instance.new("ScrollingFrame")
-local WoodRUs = Instance.new("TextButton")
-local PowerShop = Instance.new("TextButton")
-local LogicShop = Instance.new("TextButton")
-local BobsShack = Instance.new("TextButton")
-local LandStore = Instance.new("TextButton")
-local ArtsShop = Instance.new("TextButton")
-local BoxedCar = Instance.new("TextButton")
-local Furnishings = Instance.new("TextButton")
-local TheDen = Instance.new("TextButton")
-local SkiLodge = Instance.new("TextButton")
-local ShrineOfSight = Instance.new("TextButton")
-local Bridge = Instance.new("TextButton")
-local Dock = Instance.new("TextButton")
-local Spawnpoint = Instance.new("TextButton")
-local closeframetpplace = Instance.new("TextButton")
-local Scrollingtpwoodcar = Instance.new("ScrollingFrame")
-local Birchcar = Instance.new("TextButton")
-local Cherrycar = Instance.new("TextButton")
-local Genericcar = Instance.new("TextButton")
-local Greencar = Instance.new("TextButton")
-local Koacar = Instance.new("TextButton")
-local Goldcar = Instance.new("TextButton")
-local Fircar = Instance.new("TextButton")
-local CaveCrawlercar = Instance.new("TextButton")
-local LoneCavecar = Instance.new("TextButton")
-local Oakcar = Instance.new("TextButton")
-local Palmcar = Instance.new("TextButton")
-local Pinecar = Instance.new("TextButton")
-local SnowGlowcar = Instance.new("TextButton")
-local Volcanocar = Instance.new("TextButton")
-local Walnutcar = Instance.new("TextButton")
-local closescrolltpwoodcar = Instance.new("TextButton")
-local Frostcar = Instance.new("TextButton")
-local scrolltpplacecar = Instance.new("ScrollingFrame")
-local WoodRUs_2 = Instance.new("TextButton")
-local PowerShop_2 = Instance.new("TextButton")
-local LogicShop_2 = Instance.new("TextButton")
-local BobsShack_2 = Instance.new("TextButton")
-local LandStore_2 = Instance.new("TextButton")
-local ArtsShop_2 = Instance.new("TextButton")
-local BoxedCar_2 = Instance.new("TextButton")
-local Furnishings_2 = Instance.new("TextButton")
-local TheDen_2 = Instance.new("TextButton")
-local SkiLodge_2 = Instance.new("TextButton")
-local ShrineOfSight_2 = Instance.new("TextButton")
-local Bridge_2 = Instance.new("TextButton")
-local Dock_2 = Instance.new("TextButton")
-local Spawnpoint_2 = Instance.new("TextButton")
-local closeframetpplacecar = Instance.new("TextButton")
-local Scrollingtpwood = Instance.new("ScrollingFrame")
-local Birch = Instance.new("TextButton")
-local Cherry = Instance.new("TextButton")
-local Generic = Instance.new("TextButton")
-local Green = Instance.new("TextButton")
-local Koa = Instance.new("TextButton")
-local Gold = Instance.new("TextButton")
-local Fir = Instance.new("TextButton")
-local CaveCrawler = Instance.new("TextButton")
-local LoneCave = Instance.new("TextButton")
-local Oak = Instance.new("TextButton")
-local Palm = Instance.new("TextButton")
-local Pine = Instance.new("TextButton")
-local SnowGlow = Instance.new("TextButton")
-local Volcano = Instance.new("TextButton")
-local Walnut = Instance.new("TextButton")
-local closescrolltpwood = Instance.new("TextButton")
-local Frost = Instance.new("TextButton")
 local closeframegui = Instance.new("TextButton")
 local openframegui = Instance.new("TextButton")
 
@@ -289,12 +293,25 @@ miscwaypoint.TextColor3 = Color3.fromRGB(255, 255, 255)
 miscwaypoint.TextSize = 14.000
 miscwaypoint.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
+teleportbutton.Name = "teleportbutton"
+teleportbutton.Parent = scrollmenu
+teleportbutton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+teleportbutton.BorderColor3 = Color3.fromRGB(38, 38, 38)
+teleportbutton.Position = UDim2.new(0.0700000003, 0, 0.456999987, 0)
+teleportbutton.Size = UDim2.new(0, 79, 0, 20)
+teleportbutton.Font = Enum.Font.SourceSans
+teleportbutton.Text = "TELEPORT"
+teleportbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleportbutton.TextSize = 14.000
+teleportbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
 frameinfo.Name = "frameinfo"
 frameinfo.Parent = framegui
 frameinfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 frameinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 frameinfo.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
 frameinfo.Size = UDim2.new(0, 311, 0, 257)
+frameinfo.ZIndex = 0
 
 textguiinfo.Name = "textguiinfo"
 textguiinfo.Parent = frameinfo
@@ -302,6 +319,7 @@ textguiinfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 textguiinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textguiinfo.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
 textguiinfo.Size = UDim2.new(0, 200, 0, 20)
+textguiinfo.ZIndex = 0
 textguiinfo.Font = Enum.Font.ArialBold
 textguiinfo.Text = "GUI INFO"
 textguiinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -314,6 +332,7 @@ bgguiinfo.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
 bgguiinfo.BorderColor3 = Color3.fromRGB(21, 21, 21)
 bgguiinfo.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
 bgguiinfo.Size = UDim2.new(0, 286, 0, 216)
+bgguiinfo.ZIndex = 0
 
 Frameguiby.Name = "Frameguiby"
 Frameguiby.Parent = bgguiinfo
@@ -321,17 +340,97 @@ Frameguiby.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Frameguiby.BorderColor3 = Color3.fromRGB(38, 38, 38)
 Frameguiby.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
 Frameguiby.Size = UDim2.new(0, 257, 0, 30)
+Frameguiby.ZIndex = 0
 
 guiby.Name = "guiby"
 guiby.Parent = Frameguiby
 guiby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 guiby.BackgroundTransparency = 100.000
 guiby.Size = UDim2.new(0, 69, 0, 30)
+guiby.ZIndex = 0
 guiby.Font = Enum.Font.SourceSans
 guiby.Text = "GUI BY :"
 guiby.TextColor3 = Color3.fromRGB(255, 255, 255)
 guiby.TextSize = 14.000
 guiby.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+freeland.Name = "freeland"
+freeland.Parent = Frameguiby
+freeland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+freeland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+freeland.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
+freeland.Size = UDim2.new(0, 69, 0, 20)
+freeland.Visible = false
+freeland.Font = Enum.Font.SourceSans
+freeland.Text = "FREE LAND"
+freeland.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeland.TextSize = 14.000
+freeland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+maxland.Name = "maxland"
+maxland.Parent = Frameguiby
+maxland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+maxland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maxland.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+maxland.Size = UDim2.new(0, 69, 0, 20)
+maxland.Visible = false
+maxland.Font = Enum.Font.SourceSans
+maxland.Text = "MAX LAND"
+maxland.TextColor3 = Color3.fromRGB(255, 255, 255)
+maxland.TextSize = 14.000
+maxland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+playertpplace.Name = "playertpplace"
+playertpplace.Parent = Frameguiby
+playertpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+playertpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+playertpplace.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+playertpplace.Size = UDim2.new(0, 69, 0, 20)
+playertpplace.Visible = false
+playertpplace.Font = Enum.Font.SourceSans
+playertpplace.Text = "CLICK"
+playertpplace.TextColor3 = Color3.fromRGB(255, 255, 255)
+playertpplace.TextSize = 14.000
+playertpplace.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+playertp.Name = "playertp"
+playertp.Parent = Frameguiby
+playertp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playertp.BackgroundTransparency = 100.000
+playertp.Position = UDim2.new(0.0272373538, 0, 0, 0)
+playertp.Size = UDim2.new(0, 69, 0, 30)
+playertp.Visible = false
+playertp.Font = Enum.Font.SourceSans
+playertp.Text = "TP TO PLACE"
+playertp.TextColor3 = Color3.fromRGB(255, 255, 255)
+playertp.TextSize = 14.000
+playertp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+nameplayer.Name = "nameplayer"
+nameplayer.Parent = Frameguiby
+nameplayer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nameplayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+nameplayer.Position = UDim2.new(0.0440933891, 0, 0.178100079, 0)
+nameplayer.Size = UDim2.new(0, 83, 0, 20)
+nameplayer.Visible = false
+nameplayer.Font = Enum.Font.SourceSans
+nameplayer.Text = "PLAYER NAME"
+nameplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameplayer.TextSize = 14.000
+nameplayer.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+listplayerbut.Name = "listplayerbut"
+listplayerbut.Parent = Frameguiby
+listplayerbut.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+listplayerbut.BorderColor3 = Color3.fromRGB(0, 0, 0)
+listplayerbut.Position = UDim2.new(0.606999993, 0, 0.166999996, 0)
+listplayerbut.Size = UDim2.new(0, 83, 0, 20)
+listplayerbut.Visible = false
+listplayerbut.Font = Enum.Font.SourceSans
+listplayerbut.Text = "LIST"
+listplayerbut.TextColor3 = Color3.fromRGB(255, 255, 255)
+listplayerbut.TextSize = 14.000
+listplayerbut.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Frameui.Name = "Frameui"
 Frameui.Parent = bgguiinfo
@@ -339,17 +438,98 @@ Frameui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Frameui.BorderColor3 = Color3.fromRGB(38, 38, 38)
 Frameui.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
 Frameui.Size = UDim2.new(0, 257, 0, 30)
+Frameui.ZIndex = 0
 
 uiby.Name = "uiby"
 uiby.Parent = Frameui
 uiby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 uiby.BackgroundTransparency = 100.000
 uiby.Size = UDim2.new(0, 69, 0, 30)
+uiby.ZIndex = 0
 uiby.Font = Enum.Font.SourceSans
 uiby.Text = "UI BY :"
 uiby.TextColor3 = Color3.fromRGB(255, 255, 255)
 uiby.TextSize = 14.000
 uiby.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+openguidonatebase.Name = "openguidonatebase"
+openguidonatebase.Parent = Frameui
+openguidonatebase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+openguidonatebase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openguidonatebase.Position = UDim2.new(0.606999993, 0, 0.166999996, 0)
+openguidonatebase.Size = UDim2.new(0, 69, 0, 20)
+openguidonatebase.Visible = false
+openguidonatebase.Font = Enum.Font.SourceSans
+openguidonatebase.Text = "DONATE"
+openguidonatebase.TextColor3 = Color3.fromRGB(255, 255, 255)
+openguidonatebase.TextSize = 14.000
+openguidonatebase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+openguidonatebase.TextWrapped = true
+
+donatebasetext.Name = "donatebasetext"
+donatebasetext.Parent = Frameui
+donatebasetext.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+donatebasetext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+donatebasetext.Position = UDim2.new(0.0970000029, 0, 0.166999996, 0)
+donatebasetext.Size = UDim2.new(0, 69, 0, 20)
+donatebasetext.Visible = false
+donatebasetext.Font = Enum.Font.SourceSans
+donatebasetext.Text = "DONATE BASE"
+donatebasetext.TextColor3 = Color3.fromRGB(255, 255, 255)
+donatebasetext.TextSize = 14.000
+donatebasetext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+playertpwood.Name = "playertpwood"
+playertpwood.Parent = Frameui
+playertpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+playertpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+playertpwood.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+playertpwood.Size = UDim2.new(0, 69, 0, 20)
+playertpwood.Visible = false
+playertpwood.Font = Enum.Font.SourceSans
+playertpwood.Text = "CLICK"
+playertpwood.TextColor3 = Color3.fromRGB(255, 255, 255)
+playertpwood.TextSize = 14.000
+playertpwood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tptowood.Name = "tptowood"
+tptowood.Parent = Frameui
+tptowood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptowood.BackgroundTransparency = 100.000
+tptowood.Position = UDim2.new(0.0272373538, 0, 0, 0)
+tptowood.Size = UDim2.new(0, 69, 0, 30)
+tptowood.Visible = false
+tptowood.Font = Enum.Font.SourceSans
+tptowood.Text = "TP  TO WOOD"
+tptowood.TextColor3 = Color3.fromRGB(255, 255, 255)
+tptowood.TextSize = 14.000
+tptowood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tptoplayer.Name = "tptoplayer"
+tptoplayer.Parent = Frameui
+tptoplayer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tptoplayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tptoplayer.Position = UDim2.new(0.0270000007, 0, 0.166666672, 0)
+tptoplayer.Size = UDim2.new(0, 69, 0, 20)
+tptoplayer.Visible = false
+tptoplayer.Font = Enum.Font.SourceSans
+tptoplayer.Text = "TP TO PLAYER"
+tptoplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+tptoplayer.TextSize = 14.000
+tptoplayer.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tptobase.Name = "tptobase"
+tptobase.Parent = Frameui
+tptobase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tptobase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tptobase.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+tptobase.Size = UDim2.new(0, 69, 0, 20)
+tptobase.Visible = false
+tptobase.Font = Enum.Font.SourceSans
+tptobase.Text = "TP TO BASE"
+tptobase.TextColor3 = Color3.fromRGB(255, 255, 255)
+tptobase.TextSize = 14.000
+tptobase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Frametest.Name = "Frametest"
 Frametest.Parent = bgguiinfo
@@ -357,24 +537,1180 @@ Frametest.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Frametest.BorderColor3 = Color3.fromRGB(38, 38, 38)
 Frametest.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
 Frametest.Size = UDim2.new(0, 257, 0, 30)
+Frametest.ZIndex = 0
 
 test.Name = "test"
 test.Parent = Frametest
 test.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 test.BackgroundTransparency = 100.000
 test.Size = UDim2.new(0, 69, 0, 30)
-test.ZIndex = -2
+test.ZIndex = 0
 test.Font = Enum.Font.SourceSans
 test.Text = "TESTER :"
 test.TextColor3 = Color3.fromRGB(255, 255, 255)
 test.TextSize = 14.000
 test.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
+Dupe.Name = "Dupe"
+Dupe.Parent = Frametest
+Dupe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+Dupe.Size = UDim2.new(0, 69, 0, 20)
+Dupe.Visible = false
+Dupe.Font = Enum.Font.SourceSans
+Dupe.Text = "DUPE"
+Dupe.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dupe.TextSize = 14.000
+Dupe.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+SL.Name = "SL"
+SL.Parent = Frametest
+SL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SL.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
+SL.Size = UDim2.new(0, 69, 0, 20)
+SL.Visible = false
+SL.Font = Enum.Font.SourceSans
+SL.Text = "SLOT"
+SL.TextColor3 = Color3.fromRGB(255, 255, 255)
+SL.TextSize = 12.000
+SL.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tpcarplace.Name = "tpcarplace"
+tpcarplace.Parent = Frametest
+tpcarplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tpcarplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tpcarplace.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+tpcarplace.Size = UDim2.new(0, 69, 0, 20)
+tpcarplace.Visible = false
+tpcarplace.Font = Enum.Font.SourceSans
+tpcarplace.Text = "CLICK"
+tpcarplace.TextColor3 = Color3.fromRGB(255, 255, 255)
+tpcarplace.TextSize = 14.000
+tpcarplace.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+cartotp.Name = "cartotp"
+cartotp.Parent = Frametest
+cartotp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cartotp.BackgroundTransparency = 100.000
+cartotp.Position = UDim2.new(0.0272373538, 0, 0, 0)
+cartotp.Size = UDim2.new(0, 69, 0, 30)
+cartotp.Visible = false
+cartotp.ZIndex = -2
+cartotp.Font = Enum.Font.SourceSans
+cartotp.Text = "CAR TP"
+cartotp.TextColor3 = Color3.fromRGB(255, 255, 255)
+cartotp.TextSize = 14.000
+cartotp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+koordinat.Name = "koordinat"
+koordinat.Parent = Frametest
+koordinat.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+koordinat.BorderColor3 = Color3.fromRGB(38, 38, 38)
+koordinat.Position = UDim2.new(0.00581389572, 0, 0.0483520515, 0)
+koordinat.Size = UDim2.new(0, 255, 0, 29)
+koordinat.Visible = false
+koordinat.Font = Enum.Font.SourceSans
+koordinat.Text = "KOORDINAT"
+koordinat.TextColor3 = Color3.fromRGB(255, 255, 255)
+koordinat.TextSize = 14.000
+koordinat.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
 Frame.Parent = bgguiinfo
 Frame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Frame.BorderColor3 = Color3.fromRGB(38, 38, 38)
 Frame.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
 Frame.Size = UDim2.new(0, 257, 0, 30)
+Frame.ZIndex = 0
+
+load.Name = "load"
+load.Parent = Frame
+load.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load.BorderColor3 = Color3.fromRGB(0, 0, 0)
+load.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+load.Size = UDim2.new(0, 69, 0, 20)
+load.Visible = false
+load.Font = Enum.Font.SourceSans
+load.Text = "LOAD"
+load.TextColor3 = Color3.fromRGB(255, 255, 255)
+load.TextSize = 14.000
+load.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+loadbase.Name = "loadbase"
+loadbase.Parent = Frame
+loadbase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+loadbase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loadbase.Position = UDim2.new(0.0970000029, 0, 0.166999996, 0)
+loadbase.Size = UDim2.new(0, 69, 0, 20)
+loadbase.Visible = false
+loadbase.Font = Enum.Font.SourceSans
+loadbase.Text = "FAKE LOAD"
+loadbase.TextColor3 = Color3.fromRGB(255, 255, 255)
+loadbase.TextSize = 14.000
+loadbase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+textcartptowood.Name = "textcartptowood"
+textcartptowood.Parent = Frame
+textcartptowood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textcartptowood.BackgroundTransparency = 100.000
+textcartptowood.Position = UDim2.new(0.0272373538, 0, 0, 0)
+textcartptowood.Size = UDim2.new(0, 69, 0, 30)
+textcartptowood.Visible = false
+textcartptowood.Font = Enum.Font.SourceSans
+textcartptowood.Text = "CAR TP WOOD"
+textcartptowood.TextColor3 = Color3.fromRGB(255, 255, 255)
+textcartptowood.TextSize = 14.000
+textcartptowood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tpcarwood.Name = "tpcarwood"
+tpcarwood.Parent = Frame
+tpcarwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tpcarwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tpcarwood.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+tpcarwood.Size = UDim2.new(0, 69, 0, 20)
+tpcarwood.Visible = false
+tpcarwood.Font = Enum.Font.SourceSans
+tpcarwood.Text = "CLICK"
+tpcarwood.TextColor3 = Color3.fromRGB(255, 255, 255)
+tpcarwood.TextSize = 14.000
+tpcarwood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tptokoordinat.Name = "tptokoordinat"
+tptokoordinat.Parent = Frame
+tptokoordinat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tptokoordinat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tptokoordinat.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+tptokoordinat.Size = UDim2.new(0, 69, 0, 20)
+tptokoordinat.Visible = false
+tptokoordinat.Font = Enum.Font.SourceSans
+tptokoordinat.Text = "TP"
+tptokoordinat.TextColor3 = Color3.fromRGB(255, 255, 255)
+tptokoordinat.TextSize = 14.000
+tptokoordinat.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+setkoordinat.Name = "setkoordinat"
+setkoordinat.Parent = Frame
+setkoordinat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+setkoordinat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+setkoordinat.Position = UDim2.new(0.0270000007, 0, 0.166666672, 0)
+setkoordinat.Size = UDim2.new(0, 69, 0, 20)
+setkoordinat.Visible = false
+setkoordinat.Font = Enum.Font.SourceSans
+setkoordinat.Text = "SET"
+setkoordinat.TextColor3 = Color3.fromRGB(255, 255, 255)
+setkoordinat.TextSize = 14.000
+setkoordinat.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+SF.Name = "SF"
+SF.Parent = frameinfo
+SF.Active = true
+SF.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SF.Position = UDim2.new(0, 0, 0.377000004, 0)
+SF.Size = UDim2.new(0, 310, 0, 160)
+SF.Visible = false
+SF.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
+SF.ScrollBarThickness = 0
+
+Frame_2.Parent = SF
+Frame_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame_2.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Frame_2.Position = UDim2.new(0.0387096778, 0, 0.0320061669, 0)
+Frame_2.Size = UDim2.new(0, 286, 0, 286)
+
+S5.Name = "S5"
+S5.Parent = Frame_2
+S5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S5.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S5.Position = UDim2.new(0.0489999987, 0, 0.718999982, 0)
+S5.Size = UDim2.new(0, 257, 0, 30)
+S5.Font = Enum.Font.SourceSans
+S5.Text = "SLOT NUMBER 5"
+S5.TextColor3 = Color3.fromRGB(255, 255, 255)
+S5.TextSize = 14.000
+S5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+S6.Name = "S6"
+S6.Parent = Frame_2
+S6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S6.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S6.Position = UDim2.new(0.0489999987, 0, 0.869000018, 0)
+S6.Size = UDim2.new(0, 257, 0, 30)
+S6.Font = Enum.Font.SourceSans
+S6.Text = "SLOT NUMBER 6"
+S6.TextColor3 = Color3.fromRGB(255, 255, 255)
+S6.TextSize = 14.000
+S6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+S4.Name = "S4"
+S4.Parent = Frame_2
+S4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S4.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S4.Position = UDim2.new(0.0489999987, 0, 0.569000006, 0)
+S4.Size = UDim2.new(0, 257, 0, 30)
+S4.Font = Enum.Font.SourceSans
+S4.Text = "SLOT NUMBER 4"
+S4.TextColor3 = Color3.fromRGB(255, 255, 255)
+S4.TextSize = 14.000
+S4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+S1.Name = "S1"
+S1.Parent = Frame_2
+S1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S1.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S1.Position = UDim2.new(0.0489999987, 0, 0.107000001, 0)
+S1.Size = UDim2.new(0, 257, 0, 30)
+S1.Font = Enum.Font.SourceSans
+S1.Text = "SLOT NUMBER 1"
+S1.TextColor3 = Color3.fromRGB(255, 255, 255)
+S1.TextSize = 14.000
+S1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+S3.Name = "S3"
+S3.Parent = Frame_2
+S3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S3.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S3.Position = UDim2.new(0.0489999987, 0, 0.419, 0)
+S3.Size = UDim2.new(0, 257, 0, 30)
+S3.Font = Enum.Font.SourceSans
+S3.Text = "SLOT NUMBER 3"
+S3.TextColor3 = Color3.fromRGB(255, 255, 255)
+S3.TextSize = 14.000
+S3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+S2.Name = "S2"
+S2.Parent = Frame_2
+S2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+S2.BorderColor3 = Color3.fromRGB(38, 38, 38)
+S2.Position = UDim2.new(0.0489999987, 0, 0.268999994, 0)
+S2.Size = UDim2.new(0, 257, 0, 30)
+S2.Font = Enum.Font.SourceSans
+S2.Text = "SLOT NUMBER 2"
+S2.TextColor3 = Color3.fromRGB(255, 255, 255)
+S2.TextSize = 14.000
+S2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framedonateslot.Name = "framedonateslot"
+framedonateslot.Parent = frameinfo
+framedonateslot.Active = true
+framedonateslot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+framedonateslot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+framedonateslot.Position = UDim2.new(0, 0, 0.377000004, 0)
+framedonateslot.Size = UDim2.new(0, 310, 0, 160)
+framedonateslot.Visible = false
+framedonateslot.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
+framedonateslot.ScrollBarThickness = 0
+
+Frame_3.Parent = framedonateslot
+Frame_3.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame_3.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Frame_3.Position = UDim2.new(0.0387096778, 0, 0.0320061669, 0)
+Frame_3.Size = UDim2.new(0, 286, 0, 286)
+
+slot5.Name = "slot5"
+slot5.Parent = Frame_3
+slot5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot5.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot5.Position = UDim2.new(0.0489999987, 0, 0.718999982, 0)
+slot5.Size = UDim2.new(0, 257, 0, 30)
+slot5.Font = Enum.Font.SourceSans
+slot5.Text = "SLOT NUMBER 5"
+slot5.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot5.TextSize = 14.000
+slot5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot6.Name = "slot6"
+slot6.Parent = Frame_3
+slot6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot6.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot6.Position = UDim2.new(0.0489999987, 0, 0.869000018, 0)
+slot6.Size = UDim2.new(0, 257, 0, 30)
+slot6.Font = Enum.Font.SourceSans
+slot6.Text = "SLOT NUMBER 6"
+slot6.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot6.TextSize = 14.000
+slot6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot4.Name = "slot4"
+slot4.Parent = Frame_3
+slot4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot4.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot4.Position = UDim2.new(0.0489999987, 0, 0.569000006, 0)
+slot4.Size = UDim2.new(0, 257, 0, 30)
+slot4.Font = Enum.Font.SourceSans
+slot4.Text = "SLOT NUMBER 4"
+slot4.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot4.TextSize = 14.000
+slot4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot1.Name = "slot1"
+slot1.Parent = Frame_3
+slot1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot1.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot1.Position = UDim2.new(0.0489999987, 0, 0.107000001, 0)
+slot1.Size = UDim2.new(0, 257, 0, 30)
+slot1.Font = Enum.Font.SourceSans
+slot1.Text = "SLOT NUMBER 1"
+slot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot1.TextSize = 14.000
+slot1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot3.Name = "slot3"
+slot3.Parent = Frame_3
+slot3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot3.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot3.Position = UDim2.new(0.0489999987, 0, 0.419, 0)
+slot3.Size = UDim2.new(0, 257, 0, 30)
+slot3.Font = Enum.Font.SourceSans
+slot3.Text = "SLOT NUMBER 3"
+slot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot3.TextSize = 14.000
+slot3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot2.Name = "slot2"
+slot2.Parent = Frame_3
+slot2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot2.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot2.Position = UDim2.new(0.0489999987, 0, 0.268999994, 0)
+slot2.Size = UDim2.new(0, 257, 0, 30)
+slot2.Font = Enum.Font.SourceSans
+slot2.Text = "SLOT NUMBER 2"
+slot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot2.TextSize = 14.000
+slot2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+closedonateslot.Name = "closedonateslot"
+closedonateslot.Parent = framedonateslot
+closedonateslot.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+closedonateslot.BorderColor3 = Color3.fromRGB(21, 21, 21)
+closedonateslot.Position = UDim2.new(0.425806463, 0, 0.0557440966, 0)
+closedonateslot.Size = UDim2.new(0, 44, 0, 12)
+closedonateslot.Font = Enum.Font.SourceSans
+closedonateslot.Text = "^"
+closedonateslot.TextColor3 = Color3.fromRGB(170, 0, 0)
+closedonateslot.TextScaled = true
+closedonateslot.TextSize = 30.000
+closedonateslot.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closedonateslot.TextWrapped = true
+
+textland.Name = "textland"
+textland.Parent = frameinfo
+textland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textland.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+textland.Size = UDim2.new(0, 200, 0, 20)
+textland.Visible = false
+textland.Font = Enum.Font.ArialBold
+textland.Text = "LAND MISC"
+textland.TextColor3 = Color3.fromRGB(255, 255, 255)
+textland.TextSize = 14.000
+textland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Scrollingtpwood.Name = "Scrollingtpwood"
+Scrollingtpwood.Parent = frameinfo
+Scrollingtpwood.Active = true
+Scrollingtpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Scrollingtpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scrollingtpwood.Position = UDim2.new(0.0450000018, 0, 0.112999998, 0)
+Scrollingtpwood.Size = UDim2.new(0, 286, 0, 216)
+Scrollingtpwood.Visible = false
+Scrollingtpwood.ScrollBarThickness = 10
+
+Birch.Name = "Birch"
+Birch.Parent = Scrollingtpwood
+Birch.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Birch.Position = UDim2.new(0.0320000015, 0, 0.0329999998, 0)
+Birch.Size = UDim2.new(0, 254, 0, 23)
+Birch.Font = Enum.Font.SourceSans
+Birch.Text = "Birch"
+Birch.TextColor3 = Color3.fromRGB(0, 0, 0)
+Birch.TextSize = 14.000
+
+Cherry.Name = "Cherry"
+Cherry.Parent = Scrollingtpwood
+Cherry.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Cherry.Position = UDim2.new(0.0320000015, 0, 0.0930000022, 0)
+Cherry.Size = UDim2.new(0, 254, 0, 23)
+Cherry.Font = Enum.Font.SourceSans
+Cherry.Text = "Cherry"
+Cherry.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cherry.TextSize = 14.000
+
+Generic.Name = "Generic"
+Generic.Parent = Scrollingtpwood
+Generic.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Generic.Position = UDim2.new(0.0320000015, 0, 0.273000002, 0)
+Generic.Size = UDim2.new(0, 254, 0, 23)
+Generic.Font = Enum.Font.SourceSans
+Generic.Text = "Generic"
+Generic.TextColor3 = Color3.fromRGB(0, 0, 0)
+Generic.TextSize = 14.000
+
+Green.Name = "Green"
+Green.Parent = Scrollingtpwood
+Green.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Green.Position = UDim2.new(0.0320000015, 0, 0.152999997, 0)
+Green.Size = UDim2.new(0, 254, 0, 23)
+Green.Font = Enum.Font.SourceSans
+Green.Text = "Green"
+Green.TextColor3 = Color3.fromRGB(0, 0, 0)
+Green.TextSize = 14.000
+
+Koa.Name = "Koa"
+Koa.Parent = Scrollingtpwood
+Koa.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Koa.Position = UDim2.new(0.0320000015, 0, 0.813000023, 0)
+Koa.Size = UDim2.new(0, 254, 0, 23)
+Koa.Font = Enum.Font.SourceSans
+Koa.Text = "Koa"
+Koa.TextColor3 = Color3.fromRGB(0, 0, 0)
+Koa.TextSize = 14.000
+
+Gold.Name = "Gold"
+Gold.Parent = Scrollingtpwood
+Gold.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Gold.Position = UDim2.new(0.0320000015, 0, 0.933000028, 0)
+Gold.Size = UDim2.new(0, 254, 0, 23)
+Gold.Font = Enum.Font.SourceSans
+Gold.Text = "Gold"
+Gold.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gold.TextSize = 14.000
+
+Fir.Name = "Fir"
+Fir.Parent = Scrollingtpwood
+Fir.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Fir.Position = UDim2.new(0.0320000015, 0, 0.513000011, 0)
+Fir.Size = UDim2.new(0, 254, 0, 23)
+Fir.Font = Enum.Font.SourceSans
+Fir.Text = "Fir"
+Fir.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fir.TextSize = 14.000
+
+CaveCrawler.Name = "CaveCrawler"
+CaveCrawler.Parent = Scrollingtpwood
+CaveCrawler.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+CaveCrawler.Position = UDim2.new(0.0320000015, 0, 0.453000009, 0)
+CaveCrawler.Size = UDim2.new(0, 254, 0, 23)
+CaveCrawler.Font = Enum.Font.SourceSans
+CaveCrawler.Text = "CaveCrawler"
+CaveCrawler.TextColor3 = Color3.fromRGB(0, 0, 0)
+CaveCrawler.TextSize = 14.000
+
+LoneCave.Name = "LoneCave"
+LoneCave.Parent = Scrollingtpwood
+LoneCave.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LoneCave.Position = UDim2.new(0.0320000015, 0, 0.873000026, 0)
+LoneCave.Size = UDim2.new(0, 254, 0, 23)
+LoneCave.Font = Enum.Font.SourceSans
+LoneCave.Text = "LoneCave"
+LoneCave.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoneCave.TextSize = 14.000
+
+Oak.Name = "Oak"
+Oak.Parent = Scrollingtpwood
+Oak.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Oak.Position = UDim2.new(0.0320000015, 0, 0.633000016, 0)
+Oak.Size = UDim2.new(0, 254, 0, 23)
+Oak.Font = Enum.Font.SourceSans
+Oak.Text = "Oak"
+Oak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Oak.TextSize = 14.000
+
+Palm.Name = "Palm"
+Palm.Parent = Scrollingtpwood
+Palm.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Palm.Position = UDim2.new(0.0320000015, 0, 0.333000004, 0)
+Palm.Size = UDim2.new(0, 254, 0, 23)
+Palm.Font = Enum.Font.SourceSans
+Palm.Text = "Palm"
+Palm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Palm.TextSize = 14.000
+
+Pine.Name = "Pine"
+Pine.Parent = Scrollingtpwood
+Pine.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Pine.Position = UDim2.new(0.0320000015, 0, 0.573000014, 0)
+Pine.Size = UDim2.new(0, 254, 0, 23)
+Pine.Font = Enum.Font.SourceSans
+Pine.Text = "Pine"
+Pine.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pine.TextSize = 14.000
+
+SnowGlow.Name = "SnowGlow"
+SnowGlow.Parent = Scrollingtpwood
+SnowGlow.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+SnowGlow.Position = UDim2.new(0.0320000015, 0, 0.213, 0)
+SnowGlow.Size = UDim2.new(0, 254, 0, 23)
+SnowGlow.Font = Enum.Font.SourceSans
+SnowGlow.Text = "SnowGlow"
+SnowGlow.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowGlow.TextSize = 14.000
+
+Volcano.Name = "Volcano"
+Volcano.Parent = Scrollingtpwood
+Volcano.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Volcano.Position = UDim2.new(0.0320000015, 0, 0.393000007, 0)
+Volcano.Size = UDim2.new(0, 254, 0, 23)
+Volcano.Font = Enum.Font.SourceSans
+Volcano.Text = "Volcano"
+Volcano.TextColor3 = Color3.fromRGB(0, 0, 0)
+Volcano.TextSize = 14.000
+
+Walnut.Name = "Walnut"
+Walnut.Parent = Scrollingtpwood
+Walnut.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Walnut.Position = UDim2.new(0.0320000015, 0, 0.753000021, 0)
+Walnut.Size = UDim2.new(0, 254, 0, 23)
+Walnut.Font = Enum.Font.SourceSans
+Walnut.Text = "Walnut"
+Walnut.TextColor3 = Color3.fromRGB(0, 0, 0)
+Walnut.TextSize = 14.000
+
+closescrolltpwood.Name = "closescrolltpwood"
+closescrolltpwood.Parent = Scrollingtpwood
+closescrolltpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closescrolltpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closescrolltpwood.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
+closescrolltpwood.Size = UDim2.new(0, 25, 0, 19)
+closescrolltpwood.Font = Enum.Font.SourceSans
+closescrolltpwood.Text = "X"
+closescrolltpwood.TextColor3 = Color3.fromRGB(170, 0, 0)
+closescrolltpwood.TextScaled = true
+closescrolltpwood.TextSize = 14.000
+closescrolltpwood.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closescrolltpwood.TextWrapped = true
+
+Frost.Name = "Frost"
+Frost.Parent = Scrollingtpwood
+Frost.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Frost.Position = UDim2.new(0.0320000015, 0, 0.693000019, 0)
+Frost.Size = UDim2.new(0, 254, 0, 23)
+Frost.Font = Enum.Font.SourceSans
+Frost.Text = "Frost"
+Frost.TextColor3 = Color3.fromRGB(0, 0, 0)
+Frost.TextSize = 14.000
+
+Scrollingtpwoodcar.Name = "Scrollingtpwoodcar"
+Scrollingtpwoodcar.Parent = frameinfo
+Scrollingtpwoodcar.Active = true
+Scrollingtpwoodcar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Scrollingtpwoodcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scrollingtpwoodcar.Position = UDim2.new(0.0450000018, 0, 0.112999998, 0)
+Scrollingtpwoodcar.Size = UDim2.new(0, 286, 0, 216)
+Scrollingtpwoodcar.Visible = false
+Scrollingtpwoodcar.ScrollBarThickness = 10
+
+Birchcar.Name = "Birchcar"
+Birchcar.Parent = Scrollingtpwoodcar
+Birchcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Birchcar.Position = UDim2.new(0.0320000015, 0, 0.0329999998, 0)
+Birchcar.Size = UDim2.new(0, 254, 0, 23)
+Birchcar.Font = Enum.Font.SourceSans
+Birchcar.Text = "Birch"
+Birchcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Birchcar.TextSize = 14.000
+
+Cherrycar.Name = "Cherrycar"
+Cherrycar.Parent = Scrollingtpwoodcar
+Cherrycar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Cherrycar.Position = UDim2.new(0.0320000015, 0, 0.0930000022, 0)
+Cherrycar.Size = UDim2.new(0, 254, 0, 23)
+Cherrycar.Font = Enum.Font.SourceSans
+Cherrycar.Text = "Cherry"
+Cherrycar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cherrycar.TextSize = 14.000
+
+Genericcar.Name = "Genericcar"
+Genericcar.Parent = Scrollingtpwoodcar
+Genericcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Genericcar.Position = UDim2.new(0.0320000015, 0, 0.273000002, 0)
+Genericcar.Size = UDim2.new(0, 254, 0, 23)
+Genericcar.Font = Enum.Font.SourceSans
+Genericcar.Text = "Generic"
+Genericcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Genericcar.TextSize = 14.000
+
+Greencar.Name = "Greencar"
+Greencar.Parent = Scrollingtpwoodcar
+Greencar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Greencar.Position = UDim2.new(0.0320000015, 0, 0.152999997, 0)
+Greencar.Size = UDim2.new(0, 254, 0, 23)
+Greencar.Font = Enum.Font.SourceSans
+Greencar.Text = "Green"
+Greencar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Greencar.TextSize = 14.000
+
+Koacar.Name = "Koacar"
+Koacar.Parent = Scrollingtpwoodcar
+Koacar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Koacar.Position = UDim2.new(0.0320000015, 0, 0.813000023, 0)
+Koacar.Size = UDim2.new(0, 254, 0, 23)
+Koacar.Font = Enum.Font.SourceSans
+Koacar.Text = "Koa"
+Koacar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Koacar.TextSize = 14.000
+
+Goldcar.Name = "Goldcar"
+Goldcar.Parent = Scrollingtpwoodcar
+Goldcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Goldcar.Position = UDim2.new(0.0320000015, 0, 0.933000028, 0)
+Goldcar.Size = UDim2.new(0, 254, 0, 23)
+Goldcar.Font = Enum.Font.SourceSans
+Goldcar.Text = "Gold"
+Goldcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goldcar.TextSize = 14.000
+
+Fircar.Name = "Fircar"
+Fircar.Parent = Scrollingtpwoodcar
+Fircar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Fircar.Position = UDim2.new(0.0320000015, 0, 0.513000011, 0)
+Fircar.Size = UDim2.new(0, 254, 0, 23)
+Fircar.Font = Enum.Font.SourceSans
+Fircar.Text = "Fir"
+Fircar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fircar.TextSize = 14.000
+
+CaveCrawlercar.Name = "CaveCrawlercar"
+CaveCrawlercar.Parent = Scrollingtpwoodcar
+CaveCrawlercar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+CaveCrawlercar.Position = UDim2.new(0.0320000015, 0, 0.453000009, 0)
+CaveCrawlercar.Size = UDim2.new(0, 254, 0, 23)
+CaveCrawlercar.Font = Enum.Font.SourceSans
+CaveCrawlercar.Text = "CaveCrawler"
+CaveCrawlercar.TextColor3 = Color3.fromRGB(0, 0, 0)
+CaveCrawlercar.TextSize = 14.000
+
+LoneCavecar.Name = "LoneCavecar"
+LoneCavecar.Parent = Scrollingtpwoodcar
+LoneCavecar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LoneCavecar.Position = UDim2.new(0.0320000015, 0, 0.873000026, 0)
+LoneCavecar.Size = UDim2.new(0, 254, 0, 23)
+LoneCavecar.Font = Enum.Font.SourceSans
+LoneCavecar.Text = "LoneCave"
+LoneCavecar.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoneCavecar.TextSize = 14.000
+
+Oakcar.Name = "Oakcar"
+Oakcar.Parent = Scrollingtpwoodcar
+Oakcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Oakcar.Position = UDim2.new(0.0320000015, 0, 0.633000016, 0)
+Oakcar.Size = UDim2.new(0, 254, 0, 23)
+Oakcar.Font = Enum.Font.SourceSans
+Oakcar.Text = "Oak"
+Oakcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Oakcar.TextSize = 14.000
+
+Palmcar.Name = "Palmcar"
+Palmcar.Parent = Scrollingtpwoodcar
+Palmcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Palmcar.Position = UDim2.new(0.0320000015, 0, 0.333000004, 0)
+Palmcar.Size = UDim2.new(0, 254, 0, 23)
+Palmcar.Font = Enum.Font.SourceSans
+Palmcar.Text = "Palm"
+Palmcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Palmcar.TextSize = 14.000
+
+Pinecar.Name = "Pinecar"
+Pinecar.Parent = Scrollingtpwoodcar
+Pinecar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Pinecar.Position = UDim2.new(0.0320000015, 0, 0.573000014, 0)
+Pinecar.Size = UDim2.new(0, 254, 0, 23)
+Pinecar.Font = Enum.Font.SourceSans
+Pinecar.Text = "Pine"
+Pinecar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pinecar.TextSize = 14.000
+
+SnowGlowcar.Name = "SnowGlowcar"
+SnowGlowcar.Parent = Scrollingtpwoodcar
+SnowGlowcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+SnowGlowcar.Position = UDim2.new(0.0320000015, 0, 0.213, 0)
+SnowGlowcar.Size = UDim2.new(0, 254, 0, 23)
+SnowGlowcar.Font = Enum.Font.SourceSans
+SnowGlowcar.Text = "SnowGlow"
+SnowGlowcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowGlowcar.TextSize = 14.000
+
+Volcanocar.Name = "Volcanocar"
+Volcanocar.Parent = Scrollingtpwoodcar
+Volcanocar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Volcanocar.Position = UDim2.new(0.0320000015, 0, 0.393000007, 0)
+Volcanocar.Size = UDim2.new(0, 254, 0, 23)
+Volcanocar.Font = Enum.Font.SourceSans
+Volcanocar.Text = "Volcano"
+Volcanocar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Volcanocar.TextSize = 14.000
+
+Walnutcar.Name = "Walnutcar"
+Walnutcar.Parent = Scrollingtpwoodcar
+Walnutcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Walnutcar.Position = UDim2.new(0.0320000015, 0, 0.753000021, 0)
+Walnutcar.Size = UDim2.new(0, 254, 0, 23)
+Walnutcar.Font = Enum.Font.SourceSans
+Walnutcar.Text = "Walnut"
+Walnutcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Walnutcar.TextSize = 14.000
+
+closescrolltpwoodcar.Name = "closescrolltpwoodcar"
+closescrolltpwoodcar.Parent = Scrollingtpwoodcar
+closescrolltpwoodcar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closescrolltpwoodcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closescrolltpwoodcar.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
+closescrolltpwoodcar.Size = UDim2.new(0, 25, 0, 19)
+closescrolltpwoodcar.Font = Enum.Font.SourceSans
+closescrolltpwoodcar.Text = "X"
+closescrolltpwoodcar.TextColor3 = Color3.fromRGB(170, 0, 0)
+closescrolltpwoodcar.TextScaled = true
+closescrolltpwoodcar.TextSize = 14.000
+closescrolltpwoodcar.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closescrolltpwoodcar.TextWrapped = true
+
+Frostcar.Name = "Frostcar"
+Frostcar.Parent = Scrollingtpwoodcar
+Frostcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Frostcar.Position = UDim2.new(0.0320000015, 0, 0.693000019, 0)
+Frostcar.Size = UDim2.new(0, 254, 0, 23)
+Frostcar.Font = Enum.Font.SourceSans
+Frostcar.Text = "Frost"
+Frostcar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Frostcar.TextSize = 14.000
+
+scrolltpplace.Name = "scrolltpplace"
+scrolltpplace.Parent = frameinfo
+scrolltpplace.Active = true
+scrolltpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scrolltpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scrolltpplace.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
+scrolltpplace.Size = UDim2.new(0, 286, 0, 216)
+scrolltpplace.Visible = false
+scrolltpplace.ScrollBarThickness = 10
+
+WoodRUs.Name = "WoodRUs"
+WoodRUs.Parent = scrolltpplace
+WoodRUs.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+WoodRUs.Position = UDim2.new(0.063000001, 0, 0.103, 0)
+WoodRUs.Size = UDim2.new(0, 247, 0, 23)
+WoodRUs.Font = Enum.Font.SourceSans
+WoodRUs.Text = "WoodRUs"
+WoodRUs.TextColor3 = Color3.fromRGB(0, 0, 0)
+WoodRUs.TextSize = 14.000
+
+PowerShop.Name = "PowerShop"
+PowerShop.Parent = scrolltpplace
+PowerShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+PowerShop.Position = UDim2.new(0.063000001, 0, 0.592999995, 0)
+PowerShop.Size = UDim2.new(0, 247, 0, 23)
+PowerShop.Font = Enum.Font.SourceSans
+PowerShop.Text = "PowerShop"
+PowerShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+PowerShop.TextSize = 14.000
+
+LogicShop.Name = "LogicShop"
+LogicShop.Parent = scrolltpplace
+LogicShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LogicShop.Position = UDim2.new(0.063000001, 0, 0.523000002, 0)
+LogicShop.Size = UDim2.new(0, 247, 0, 23)
+LogicShop.Font = Enum.Font.SourceSans
+LogicShop.Text = "LogicShop"
+LogicShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogicShop.TextSize = 14.000
+
+BobsShack.Name = "BobsShack"
+BobsShack.Parent = scrolltpplace
+BobsShack.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BobsShack.Position = UDim2.new(0.063000001, 0, 0.172999993, 0)
+BobsShack.Size = UDim2.new(0, 247, 0, 23)
+BobsShack.Font = Enum.Font.SourceSans
+BobsShack.Text = "BobsShack"
+BobsShack.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobsShack.TextSize = 14.000
+
+LandStore.Name = "LandStore"
+LandStore.Parent = scrolltpplace
+LandStore.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LandStore.Position = UDim2.new(0.063000001, 0, 0.453000009, 0)
+LandStore.Size = UDim2.new(0, 247, 0, 23)
+LandStore.Font = Enum.Font.SourceSans
+LandStore.Text = "LandStore"
+LandStore.TextColor3 = Color3.fromRGB(0, 0, 0)
+LandStore.TextSize = 14.000
+
+ArtsShop.Name = "ArtsShop"
+ArtsShop.Parent = scrolltpplace
+ArtsShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+ArtsShop.Position = UDim2.new(0.063000001, 0, 0.312999994, 0)
+ArtsShop.Size = UDim2.new(0, 247, 0, 23)
+ArtsShop.Font = Enum.Font.SourceSans
+ArtsShop.Text = "ArtsShop"
+ArtsShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArtsShop.TextSize = 14.000
+
+BoxedCar.Name = "BoxedCar"
+BoxedCar.Parent = scrolltpplace
+BoxedCar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BoxedCar.Position = UDim2.new(0.063000001, 0, 0.243000001, 0)
+BoxedCar.Size = UDim2.new(0, 247, 0, 23)
+BoxedCar.Font = Enum.Font.SourceSans
+BoxedCar.Text = "BoxedCar"
+BoxedCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxedCar.TextSize = 14.000
+
+Furnishings.Name = "Furnishings"
+Furnishings.Parent = scrolltpplace
+Furnishings.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Furnishings.Position = UDim2.new(0.063000001, 0, 0.382999986, 0)
+Furnishings.Size = UDim2.new(0, 247, 0, 23)
+Furnishings.Font = Enum.Font.SourceSans
+Furnishings.Text = "Furnishings"
+Furnishings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Furnishings.TextSize = 14.000
+
+TheDen.Name = "TheDen"
+TheDen.Parent = scrolltpplace
+TheDen.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+TheDen.Position = UDim2.new(0.063000001, 0, 0.662999988, 0)
+TheDen.Size = UDim2.new(0, 247, 0, 23)
+TheDen.Font = Enum.Font.SourceSans
+TheDen.Text = "TheDen"
+TheDen.TextColor3 = Color3.fromRGB(0, 0, 0)
+TheDen.TextSize = 14.000
+
+SkiLodge.Name = "SkiLodge"
+SkiLodge.Parent = scrolltpplace
+SkiLodge.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+SkiLodge.Position = UDim2.new(0.063000001, 0, 0.73299998, 0)
+SkiLodge.Size = UDim2.new(0, 247, 0, 23)
+SkiLodge.Font = Enum.Font.SourceSans
+SkiLodge.Text = "Ski Lodge"
+SkiLodge.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkiLodge.TextSize = 14.000
+
+ShrineOfSight.Name = "ShrineOfSight"
+ShrineOfSight.Parent = scrolltpplace
+ShrineOfSight.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+ShrineOfSight.Position = UDim2.new(0.063000001, 0, 0.802999973, 0)
+ShrineOfSight.Size = UDim2.new(0, 247, 0, 23)
+ShrineOfSight.Font = Enum.Font.SourceSans
+ShrineOfSight.Text = "Shrine Of Sight"
+ShrineOfSight.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShrineOfSight.TextSize = 14.000
+
+Bridge.Name = "Bridge"
+Bridge.Parent = scrolltpplace
+Bridge.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Bridge.Position = UDim2.new(0.063000001, 0, 0.873000026, 0)
+Bridge.Size = UDim2.new(0, 247, 0, 23)
+Bridge.Font = Enum.Font.SourceSans
+Bridge.Text = "Bridge"
+Bridge.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bridge.TextSize = 14.000
+
+Dock.Name = "Dock"
+Dock.Parent = scrolltpplace
+Dock.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Dock.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Dock.Position = UDim2.new(0.063000001, 0, 0.943000019, 0)
+Dock.Size = UDim2.new(0, 247, 0, 23)
+Dock.Font = Enum.Font.SourceSans
+Dock.Text = "Dock"
+Dock.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dock.TextSize = 14.000
+
+Spawnpoint.Name = "Spawnpoint"
+Spawnpoint.Parent = scrolltpplace
+Spawnpoint.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Spawnpoint.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Spawnpoint.Position = UDim2.new(0.062937066, 0, 0.0331439376, 0)
+Spawnpoint.Size = UDim2.new(0, 247, 0, 23)
+Spawnpoint.Font = Enum.Font.SourceSans
+Spawnpoint.Text = "Spawn"
+Spawnpoint.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spawnpoint.TextSize = 14.000
+
+closeframetpplace.Name = "closeframetpplace"
+closeframetpplace.Parent = scrolltpplace
+closeframetpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpplace.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
+closeframetpplace.Size = UDim2.new(0, 25, 0, 19)
+closeframetpplace.Font = Enum.Font.SourceSans
+closeframetpplace.Text = "X"
+closeframetpplace.TextColor3 = Color3.fromRGB(170, 0, 0)
+closeframetpplace.TextScaled = true
+closeframetpplace.TextSize = 14.000
+closeframetpplace.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closeframetpplace.TextWrapped = true
+
+scrolltpplacecar.Name = "scrolltpplacecar"
+scrolltpplacecar.Parent = frameinfo
+scrolltpplacecar.Active = true
+scrolltpplacecar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scrolltpplacecar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scrolltpplacecar.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
+scrolltpplacecar.Size = UDim2.new(0, 286, 0, 216)
+scrolltpplacecar.Visible = false
+scrolltpplacecar.ScrollBarThickness = 10
+
+WoodRUs_2.Name = "WoodRUs"
+WoodRUs_2.Parent = scrolltpplacecar
+WoodRUs_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+WoodRUs_2.Position = UDim2.new(0.063000001, 0, 0.103, 0)
+WoodRUs_2.Size = UDim2.new(0, 247, 0, 23)
+WoodRUs_2.Font = Enum.Font.SourceSans
+WoodRUs_2.Text = "WoodRUs"
+WoodRUs_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+WoodRUs_2.TextSize = 14.000
+
+PowerShop_2.Name = "PowerShop"
+PowerShop_2.Parent = scrolltpplacecar
+PowerShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+PowerShop_2.Position = UDim2.new(0.063000001, 0, 0.592999995, 0)
+PowerShop_2.Size = UDim2.new(0, 247, 0, 23)
+PowerShop_2.Font = Enum.Font.SourceSans
+PowerShop_2.Text = "PowerShop"
+PowerShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+PowerShop_2.TextSize = 14.000
+
+LogicShop_2.Name = "LogicShop"
+LogicShop_2.Parent = scrolltpplacecar
+LogicShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LogicShop_2.Position = UDim2.new(0.063000001, 0, 0.523000002, 0)
+LogicShop_2.Size = UDim2.new(0, 247, 0, 23)
+LogicShop_2.Font = Enum.Font.SourceSans
+LogicShop_2.Text = "LogicShop"
+LogicShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogicShop_2.TextSize = 14.000
+
+BobsShack_2.Name = "BobsShack"
+BobsShack_2.Parent = scrolltpplacecar
+BobsShack_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BobsShack_2.Position = UDim2.new(0.063000001, 0, 0.172999993, 0)
+BobsShack_2.Size = UDim2.new(0, 247, 0, 23)
+BobsShack_2.Font = Enum.Font.SourceSans
+BobsShack_2.Text = "BobsShack"
+BobsShack_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobsShack_2.TextSize = 14.000
+
+LandStore_2.Name = "LandStore"
+LandStore_2.Parent = scrolltpplacecar
+LandStore_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LandStore_2.Position = UDim2.new(0.063000001, 0, 0.453000009, 0)
+LandStore_2.Size = UDim2.new(0, 247, 0, 23)
+LandStore_2.Font = Enum.Font.SourceSans
+LandStore_2.Text = "LandStore"
+LandStore_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+LandStore_2.TextSize = 14.000
+
+ArtsShop_2.Name = "ArtsShop"
+ArtsShop_2.Parent = scrolltpplacecar
+ArtsShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+ArtsShop_2.Position = UDim2.new(0.063000001, 0, 0.312999994, 0)
+ArtsShop_2.Size = UDim2.new(0, 247, 0, 23)
+ArtsShop_2.Font = Enum.Font.SourceSans
+ArtsShop_2.Text = "ArtsShop"
+ArtsShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArtsShop_2.TextSize = 14.000
+
+BoxedCar_2.Name = "BoxedCar"
+BoxedCar_2.Parent = scrolltpplacecar
+BoxedCar_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BoxedCar_2.Position = UDim2.new(0.063000001, 0, 0.243000001, 0)
+BoxedCar_2.Size = UDim2.new(0, 247, 0, 23)
+BoxedCar_2.Font = Enum.Font.SourceSans
+BoxedCar_2.Text = "BoxedCar"
+BoxedCar_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxedCar_2.TextSize = 14.000
+
+Furnishings_2.Name = "Furnishings"
+Furnishings_2.Parent = scrolltpplacecar
+Furnishings_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Furnishings_2.Position = UDim2.new(0.063000001, 0, 0.382999986, 0)
+Furnishings_2.Size = UDim2.new(0, 247, 0, 23)
+Furnishings_2.Font = Enum.Font.SourceSans
+Furnishings_2.Text = "Furnishings"
+Furnishings_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Furnishings_2.TextSize = 14.000
+
+TheDen_2.Name = "TheDen"
+TheDen_2.Parent = scrolltpplacecar
+TheDen_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+TheDen_2.Position = UDim2.new(0.063000001, 0, 0.662999988, 0)
+TheDen_2.Size = UDim2.new(0, 247, 0, 23)
+TheDen_2.Font = Enum.Font.SourceSans
+TheDen_2.Text = "TheDen"
+TheDen_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TheDen_2.TextSize = 14.000
+
+SkiLodge_2.Name = "SkiLodge"
+SkiLodge_2.Parent = scrolltpplacecar
+SkiLodge_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+SkiLodge_2.Position = UDim2.new(0.063000001, 0, 0.73299998, 0)
+SkiLodge_2.Size = UDim2.new(0, 247, 0, 23)
+SkiLodge_2.Font = Enum.Font.SourceSans
+SkiLodge_2.Text = "Ski Lodge"
+SkiLodge_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkiLodge_2.TextSize = 14.000
+
+ShrineOfSight_2.Name = "ShrineOfSight"
+ShrineOfSight_2.Parent = scrolltpplacecar
+ShrineOfSight_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+ShrineOfSight_2.Position = UDim2.new(0.063000001, 0, 0.802999973, 0)
+ShrineOfSight_2.Size = UDim2.new(0, 247, 0, 23)
+ShrineOfSight_2.Font = Enum.Font.SourceSans
+ShrineOfSight_2.Text = "Shrine Of Sight"
+ShrineOfSight_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShrineOfSight_2.TextSize = 14.000
+
+Bridge_2.Name = "Bridge"
+Bridge_2.Parent = scrolltpplacecar
+Bridge_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Bridge_2.Position = UDim2.new(0.063000001, 0, 0.873000026, 0)
+Bridge_2.Size = UDim2.new(0, 247, 0, 23)
+Bridge_2.Font = Enum.Font.SourceSans
+Bridge_2.Text = "Bridge"
+Bridge_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bridge_2.TextSize = 14.000
+
+Dock_2.Name = "Dock"
+Dock_2.Parent = scrolltpplacecar
+Dock_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Dock_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Dock_2.Position = UDim2.new(0.063000001, 0, 0.943000019, 0)
+Dock_2.Size = UDim2.new(0, 247, 0, 23)
+Dock_2.Font = Enum.Font.SourceSans
+Dock_2.Text = "Dock"
+Dock_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dock_2.TextSize = 14.000
+
+Spawnpoint_2.Name = "Spawnpoint"
+Spawnpoint_2.Parent = scrolltpplacecar
+Spawnpoint_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Spawnpoint_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Spawnpoint_2.Position = UDim2.new(0.062937066, 0, 0.0331439376, 0)
+Spawnpoint_2.Size = UDim2.new(0, 247, 0, 23)
+Spawnpoint_2.Font = Enum.Font.SourceSans
+Spawnpoint_2.Text = "Spawn"
+Spawnpoint_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spawnpoint_2.TextSize = 14.000
+
+closeframetpplacecar.Name = "closeframetpplacecar"
+closeframetpplacecar.Parent = scrolltpplacecar
+closeframetpplacecar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpplacecar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpplacecar.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
+closeframetpplacecar.Size = UDim2.new(0, 25, 0, 19)
+closeframetpplacecar.Font = Enum.Font.SourceSans
+closeframetpplacecar.Text = "X"
+closeframetpplacecar.TextColor3 = Color3.fromRGB(170, 0, 0)
+closeframetpplacecar.TextScaled = true
+closeframetpplacecar.TextSize = 14.000
+closeframetpplacecar.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closeframetpplacecar.TextWrapped = true
+
+waypoint.Name = "waypoint"
+waypoint.Parent = frameinfo
+waypoint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+waypoint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+waypoint.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+waypoint.Size = UDim2.new(0, 200, 0, 20)
+waypoint.Visible = false
+waypoint.Font = Enum.Font.ArialBold
+waypoint.Text = "WAYPOINT"
+waypoint.TextColor3 = Color3.fromRGB(255, 255, 255)
+waypoint.TextSize = 14.000
+waypoint.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+teleport.Name = "teleport"
+teleport.Parent = frameinfo
+teleport.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+teleport.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+teleport.Size = UDim2.new(0, 200, 0, 20)
+teleport.Visible = false
+teleport.Font = Enum.Font.ArialBold
+teleport.Text = "TELEPORT"
+teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleport.TextSize = 14.000
+teleport.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+listtele.Name = "listtele"
+listtele.Parent = frameinfo
+listtele.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+listtele.BorderColor3 = Color3.fromRGB(21, 21, 21)
+listtele.Position = UDim2.new(0.049390886, 0, 0.147156477, 0)
+listtele.Size = UDim2.new(0, 282, 0, 207)
+listtele.Visible = false
+
+player1.Name = "player1"
+player1.Parent = listtele
+player1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player1.Position = UDim2.new(0.100000001, 0, 0.0979999974, 0)
+player1.Size = UDim2.new(0, 226, 0, 24)
+player1.Font = Enum.Font.SourceSans
+player1.TextColor3 = Color3.fromRGB(0, 0, 0)
+player1.TextSize = 14.000
+
+player3.Name = "player3"
+player3.Parent = listtele
+player3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player3.Position = UDim2.new(0.100000001, 0, 0.398000002, 0)
+player3.Size = UDim2.new(0, 226, 0, 24)
+player3.Font = Enum.Font.SourceSans
+player3.TextColor3 = Color3.fromRGB(0, 0, 0)
+player3.TextSize = 14.000
+
+player2.Name = "player2"
+player2.Parent = listtele
+player2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player2.Position = UDim2.new(0.100000001, 0, 0.247999996, 0)
+player2.Size = UDim2.new(0, 226, 0, 24)
+player2.Font = Enum.Font.SourceSans
+player2.TextColor3 = Color3.fromRGB(0, 0, 0)
+player2.TextSize = 14.000
+
+listname.Name = "listname"
+listname.Parent = listtele
+listname.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+listname.BorderColor3 = Color3.fromRGB(21, 21, 21)
+listname.Position = UDim2.new(-0.00480911601, 0, -0.00416734489, 0)
+listname.Size = UDim2.new(0, 286, 0, 22)
+listname.Font = Enum.Font.SourceSans
+listname.Text = "LIST"
+listname.TextColor3 = Color3.fromRGB(255, 255, 255)
+listname.TextSize = 14.000
+
+player4.Name = "player4"
+player4.Parent = listtele
+player4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player4.Position = UDim2.new(0.100000001, 0, 0.547999978, 0)
+player4.Size = UDim2.new(0, 226, 0, 24)
+player4.Font = Enum.Font.SourceSans
+player4.TextColor3 = Color3.fromRGB(0, 0, 0)
+player4.TextSize = 14.000
+
+player5.Name = "player5"
+player5.Parent = listtele
+player5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player5.Position = UDim2.new(0.100000001, 0, 0.698000014, 0)
+player5.Size = UDim2.new(0, 226, 0, 24)
+player5.Font = Enum.Font.SourceSans
+player5.TextColor3 = Color3.fromRGB(0, 0, 0)
+player5.TextSize = 14.000
+
+player6.Name = "player6"
+player6.Parent = listtele
+player6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+player6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player6.Position = UDim2.new(0.100000001, 0, 0.84799999, 0)
+player6.Size = UDim2.new(0, 226, 0, 24)
+player6.Font = Enum.Font.SourceSans
+player6.TextColor3 = Color3.fromRGB(0, 0, 0)
+player6.TextSize = 14.000
 
 scrollchar.Name = "scrollchar"
 scrollchar.Parent = framegui
@@ -831,1202 +2167,6 @@ textchar.TextColor3 = Color3.fromRGB(255, 255, 255)
 textchar.TextSize = 14.000
 textchar.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-frameland.Name = "frameland"
-frameland.Parent = framegui
-frameland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-frameland.BorderColor3 = Color3.fromRGB(0, 0, 0)
-frameland.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
-frameland.Size = UDim2.new(0, 311, 0, 257)
-frameland.Visible = false
-
-textland.Name = "textland"
-textland.Parent = frameland
-textland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-textland.BorderColor3 = Color3.fromRGB(0, 0, 0)
-textland.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
-textland.Size = UDim2.new(0, 200, 0, 20)
-textland.Font = Enum.Font.ArialBold
-textland.Text = "LAND MISC"
-textland.TextColor3 = Color3.fromRGB(255, 255, 255)
-textland.TextSize = 14.000
-textland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-bgland.Name = "bgland"
-bgland.Parent = frameland
-bgland.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-bgland.BorderColor3 = Color3.fromRGB(21, 21, 21)
-bgland.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
-bgland.Size = UDim2.new(0, 286, 0, 216)
-
-Frameland.Name = "Frameland"
-Frameland.Parent = bgland
-Frameland.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-Frameland.BorderColor3 = Color3.fromRGB(38, 38, 38)
-Frameland.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
-Frameland.Size = UDim2.new(0, 257, 0, 30)
-
-freeland.Name = "freeland"
-freeland.Parent = Frameland
-freeland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-freeland.BorderColor3 = Color3.fromRGB(0, 0, 0)
-freeland.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
-freeland.Size = UDim2.new(0, 69, 0, 20)
-freeland.Font = Enum.Font.SourceSans
-freeland.Text = "FREE LAND"
-freeland.TextColor3 = Color3.fromRGB(255, 255, 255)
-freeland.TextSize = 14.000
-freeland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-maxland.Name = "maxland"
-maxland.Parent = Frameland
-maxland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-maxland.BorderColor3 = Color3.fromRGB(0, 0, 0)
-maxland.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
-maxland.Size = UDim2.new(0, 69, 0, 20)
-maxland.Font = Enum.Font.SourceSans
-maxland.Text = "MAX LAND"
-maxland.TextColor3 = Color3.fromRGB(255, 255, 255)
-maxland.TextSize = 14.000
-maxland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-framedupebase.Name = "framedupebase"
-framedupebase.Parent = bgland
-framedupebase.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-framedupebase.BorderColor3 = Color3.fromRGB(38, 38, 38)
-framedupebase.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
-framedupebase.Size = UDim2.new(0, 257, 0, 30)
-
-donatebasetext.Name = "donatebasetext"
-donatebasetext.Parent = framedupebase
-donatebasetext.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-donatebasetext.BorderColor3 = Color3.fromRGB(0, 0, 0)
-donatebasetext.Position = UDim2.new(0.0970000029, 0, 0.166999996, 0)
-donatebasetext.Size = UDim2.new(0, 69, 0, 20)
-donatebasetext.Font = Enum.Font.SourceSans
-donatebasetext.Text = "DONATE BASE"
-donatebasetext.TextColor3 = Color3.fromRGB(255, 255, 255)
-donatebasetext.TextSize = 14.000
-donatebasetext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-openguidonatebase.Name = "openguidonatebase"
-openguidonatebase.Parent = framedupebase
-openguidonatebase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-openguidonatebase.BorderColor3 = Color3.fromRGB(0, 0, 0)
-openguidonatebase.Position = UDim2.new(0.606999993, 0, 0.166999996, 0)
-openguidonatebase.Size = UDim2.new(0, 69, 0, 20)
-openguidonatebase.Font = Enum.Font.SourceSans
-openguidonatebase.Text = "DONATE"
-openguidonatebase.TextColor3 = Color3.fromRGB(255, 255, 255)
-openguidonatebase.TextSize = 14.000
-openguidonatebase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-openguidonatebase.TextWrapped = true
-
-framefakeload.Name = "framefakeload"
-framefakeload.Parent = bgland
-framefakeload.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-framefakeload.BorderColor3 = Color3.fromRGB(38, 38, 38)
-framefakeload.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
-framefakeload.Size = UDim2.new(0, 257, 0, 30)
-
-load.Name = "load"
-load.Parent = framefakeload
-load.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-load.BorderColor3 = Color3.fromRGB(0, 0, 0)
-load.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
-load.Size = UDim2.new(0, 69, 0, 20)
-load.Font = Enum.Font.SourceSans
-load.Text = "LOAD"
-load.TextColor3 = Color3.fromRGB(255, 255, 255)
-load.TextSize = 14.000
-load.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-loadbase.Name = "loadbase"
-loadbase.Parent = framefakeload
-loadbase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-loadbase.BorderColor3 = Color3.fromRGB(0, 0, 0)
-loadbase.Position = UDim2.new(0.0970000029, 0, 0.166999996, 0)
-loadbase.Size = UDim2.new(0, 69, 0, 20)
-loadbase.Font = Enum.Font.SourceSans
-loadbase.Text = "FAKE LOAD"
-loadbase.TextColor3 = Color3.fromRGB(255, 255, 255)
-loadbase.TextSize = 14.000
-loadbase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-framedupemoney.Name = "framedupemoney"
-framedupemoney.Parent = bgland
-framedupemoney.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-framedupemoney.BorderColor3 = Color3.fromRGB(38, 38, 38)
-framedupemoney.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
-framedupemoney.Size = UDim2.new(0, 257, 0, 30)
-
-Dupe.Name = "Dupe"
-Dupe.Parent = framedupemoney
-Dupe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Dupe.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Dupe.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
-Dupe.Size = UDim2.new(0, 69, 0, 20)
-Dupe.Font = Enum.Font.SourceSans
-Dupe.Text = "DUPE"
-Dupe.TextColor3 = Color3.fromRGB(255, 255, 255)
-Dupe.TextSize = 14.000
-Dupe.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-SL.Name = "SL"
-SL.Parent = framedupemoney
-SL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SL.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SL.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
-SL.Size = UDim2.new(0, 69, 0, 20)
-SL.Font = Enum.Font.SourceSans
-SL.Text = "SLOT"
-SL.TextColor3 = Color3.fromRGB(255, 255, 255)
-SL.TextSize = 12.000
-SL.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-framedonateslot.Name = "framedonateslot"
-framedonateslot.Parent = frameland
-framedonateslot.Active = true
-framedonateslot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-framedonateslot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-framedonateslot.Position = UDim2.new(0, 0, 0.377000004, 0)
-framedonateslot.Size = UDim2.new(0, 310, 0, 160)
-framedonateslot.Visible = false
-framedonateslot.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
-framedonateslot.ScrollBarThickness = 0
-
-Frame_2.Parent = framedonateslot
-Frame_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-Frame_2.BorderColor3 = Color3.fromRGB(21, 21, 21)
-Frame_2.Position = UDim2.new(0.0387096778, 0, 0.0320061669, 0)
-Frame_2.Size = UDim2.new(0, 286, 0, 286)
-
-slot5.Name = "slot5"
-slot5.Parent = Frame_2
-slot5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot5.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot5.Position = UDim2.new(0.0489999987, 0, 0.718999982, 0)
-slot5.Size = UDim2.new(0, 257, 0, 30)
-slot5.Font = Enum.Font.SourceSans
-slot5.Text = "SLOT NUMBER 5"
-slot5.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot5.TextSize = 14.000
-slot5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-slot6.Name = "slot6"
-slot6.Parent = Frame_2
-slot6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot6.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot6.Position = UDim2.new(0.0489999987, 0, 0.869000018, 0)
-slot6.Size = UDim2.new(0, 257, 0, 30)
-slot6.Font = Enum.Font.SourceSans
-slot6.Text = "SLOT NUMBER 6"
-slot6.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot6.TextSize = 14.000
-slot6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-slot4.Name = "slot4"
-slot4.Parent = Frame_2
-slot4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot4.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot4.Position = UDim2.new(0.0489999987, 0, 0.569000006, 0)
-slot4.Size = UDim2.new(0, 257, 0, 30)
-slot4.Font = Enum.Font.SourceSans
-slot4.Text = "SLOT NUMBER 4"
-slot4.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot4.TextSize = 14.000
-slot4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-slot1.Name = "slot1"
-slot1.Parent = Frame_2
-slot1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot1.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot1.Position = UDim2.new(0.0489999987, 0, 0.107000001, 0)
-slot1.Size = UDim2.new(0, 257, 0, 30)
-slot1.Font = Enum.Font.SourceSans
-slot1.Text = "SLOT NUMBER 1"
-slot1.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot1.TextSize = 14.000
-slot1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-slot3.Name = "slot3"
-slot3.Parent = Frame_2
-slot3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot3.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot3.Position = UDim2.new(0.0489999987, 0, 0.419, 0)
-slot3.Size = UDim2.new(0, 257, 0, 30)
-slot3.Font = Enum.Font.SourceSans
-slot3.Text = "SLOT NUMBER 3"
-slot3.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot3.TextSize = 14.000
-slot3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-slot2.Name = "slot2"
-slot2.Parent = Frame_2
-slot2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-slot2.BorderColor3 = Color3.fromRGB(38, 38, 38)
-slot2.Position = UDim2.new(0.0489999987, 0, 0.268999994, 0)
-slot2.Size = UDim2.new(0, 257, 0, 30)
-slot2.Font = Enum.Font.SourceSans
-slot2.Text = "SLOT NUMBER 2"
-slot2.TextColor3 = Color3.fromRGB(255, 255, 255)
-slot2.TextSize = 14.000
-slot2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-closedonateslot.Name = "closedonateslot"
-closedonateslot.Parent = framedonateslot
-closedonateslot.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-closedonateslot.BorderColor3 = Color3.fromRGB(21, 21, 21)
-closedonateslot.Position = UDim2.new(0.425806463, 0, 0.0557440966, 0)
-closedonateslot.Size = UDim2.new(0, 44, 0, 12)
-closedonateslot.Font = Enum.Font.SourceSans
-closedonateslot.Text = "^"
-closedonateslot.TextColor3 = Color3.fromRGB(170, 0, 0)
-closedonateslot.TextScaled = true
-closedonateslot.TextSize = 30.000
-closedonateslot.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
-closedonateslot.TextWrapped = true
-
-SF.Name = "SF"
-SF.Parent = frameland
-SF.Active = true
-SF.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SF.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SF.Position = UDim2.new(0, 0, 0.377000004, 0)
-SF.Size = UDim2.new(0, 310, 0, 160)
-SF.Visible = false
-SF.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
-SF.ScrollBarThickness = 0
-
-Frame_3.Parent = SF
-Frame_3.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-Frame_3.BorderColor3 = Color3.fromRGB(21, 21, 21)
-Frame_3.Position = UDim2.new(0.0387096778, 0, 0.0320061669, 0)
-Frame_3.Size = UDim2.new(0, 286, 0, 286)
-
-S5.Name = "S5"
-S5.Parent = Frame_3
-S5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S5.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S5.Position = UDim2.new(0.0489999987, 0, 0.718999982, 0)
-S5.Size = UDim2.new(0, 257, 0, 30)
-S5.Font = Enum.Font.SourceSans
-S5.Text = "SLOT NUMBER 5"
-S5.TextColor3 = Color3.fromRGB(255, 255, 255)
-S5.TextSize = 14.000
-S5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-S6.Name = "S6"
-S6.Parent = Frame_3
-S6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S6.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S6.Position = UDim2.new(0.0489999987, 0, 0.869000018, 0)
-S6.Size = UDim2.new(0, 257, 0, 30)
-S6.Font = Enum.Font.SourceSans
-S6.Text = "SLOT NUMBER 6"
-S6.TextColor3 = Color3.fromRGB(255, 255, 255)
-S6.TextSize = 14.000
-S6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-S4.Name = "S4"
-S4.Parent = Frame_3
-S4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S4.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S4.Position = UDim2.new(0.0489999987, 0, 0.569000006, 0)
-S4.Size = UDim2.new(0, 257, 0, 30)
-S4.Font = Enum.Font.SourceSans
-S4.Text = "SLOT NUMBER 4"
-S4.TextColor3 = Color3.fromRGB(255, 255, 255)
-S4.TextSize = 14.000
-S4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-S1.Name = "S1"
-S1.Parent = Frame_3
-S1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S1.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S1.Position = UDim2.new(0.0489999987, 0, 0.107000001, 0)
-S1.Size = UDim2.new(0, 257, 0, 30)
-S1.Font = Enum.Font.SourceSans
-S1.Text = "SLOT NUMBER 1"
-S1.TextColor3 = Color3.fromRGB(255, 255, 255)
-S1.TextSize = 14.000
-S1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-S3.Name = "S3"
-S3.Parent = Frame_3
-S3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S3.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S3.Position = UDim2.new(0.0489999987, 0, 0.419, 0)
-S3.Size = UDim2.new(0, 257, 0, 30)
-S3.Font = Enum.Font.SourceSans
-S3.Text = "SLOT NUMBER 3"
-S3.TextColor3 = Color3.fromRGB(255, 255, 255)
-S3.TextSize = 14.000
-S3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-S2.Name = "S2"
-S2.Parent = Frame_3
-S2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-S2.BorderColor3 = Color3.fromRGB(38, 38, 38)
-S2.Position = UDim2.new(0.0489999987, 0, 0.268999994, 0)
-S2.Size = UDim2.new(0, 257, 0, 30)
-S2.Font = Enum.Font.SourceSans
-S2.Text = "SLOT NUMBER 2"
-S2.TextColor3 = Color3.fromRGB(255, 255, 255)
-S2.TextSize = 14.000
-S2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-frameway.Name = "frameway"
-frameway.Parent = framegui
-frameway.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-frameway.BorderColor3 = Color3.fromRGB(0, 0, 0)
-frameway.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
-frameway.Size = UDim2.new(0, 311, 0, 257)
-frameway.Visible = false
-
-waypoint.Name = "waypoint"
-waypoint.Parent = frameway
-waypoint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-waypoint.BorderColor3 = Color3.fromRGB(0, 0, 0)
-waypoint.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
-waypoint.Size = UDim2.new(0, 200, 0, 20)
-waypoint.Font = Enum.Font.ArialBold
-waypoint.Text = "WAYPOINT"
-waypoint.TextColor3 = Color3.fromRGB(255, 255, 255)
-waypoint.TextSize = 14.000
-waypoint.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-bgway.Name = "bgway"
-bgway.Parent = frameway
-bgway.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-bgway.BorderColor3 = Color3.fromRGB(21, 21, 21)
-bgway.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
-bgway.Size = UDim2.new(0, 286, 0, 216)
-
-frameplayertp.Name = "frameplayertp"
-frameplayertp.Parent = bgway
-frameplayertp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-frameplayertp.BorderColor3 = Color3.fromRGB(38, 38, 38)
-frameplayertp.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
-frameplayertp.Size = UDim2.new(0, 257, 0, 30)
-
-playertp.Name = "playertp"
-playertp.Parent = frameplayertp
-playertp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-playertp.BackgroundTransparency = 100.000
-playertp.Position = UDim2.new(0.0272373538, 0, 0, 0)
-playertp.Size = UDim2.new(0, 69, 0, 30)
-playertp.Font = Enum.Font.SourceSans
-playertp.Text = "TP TO PLACE"
-playertp.TextColor3 = Color3.fromRGB(255, 255, 255)
-playertp.TextSize = 14.000
-playertp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-playertpplace.Name = "playertpplace"
-playertpplace.Parent = frameplayertp
-playertpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-playertpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
-playertpplace.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
-playertpplace.Size = UDim2.new(0, 69, 0, 20)
-playertpplace.Font = Enum.Font.SourceSans
-playertpplace.Text = "CLICK"
-playertpplace.TextColor3 = Color3.fromRGB(255, 255, 255)
-playertpplace.TextSize = 14.000
-playertpplace.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-frameplayertpwood.Name = "frameplayertpwood"
-frameplayertpwood.Parent = bgway
-frameplayertpwood.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-frameplayertpwood.BorderColor3 = Color3.fromRGB(38, 38, 38)
-frameplayertpwood.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
-frameplayertpwood.Size = UDim2.new(0, 257, 0, 30)
-
-tptowood.Name = "tptowood"
-tptowood.Parent = frameplayertpwood
-tptowood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tptowood.BackgroundTransparency = 100.000
-tptowood.Position = UDim2.new(0.0272373538, 0, 0, 0)
-tptowood.Size = UDim2.new(0, 69, 0, 30)
-tptowood.Font = Enum.Font.SourceSans
-tptowood.Text = "TP  TO WOOD"
-tptowood.TextColor3 = Color3.fromRGB(255, 255, 255)
-tptowood.TextSize = 14.000
-tptowood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-playertpwood.Name = "playertpwood"
-playertpwood.Parent = frameplayertpwood
-playertpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-playertpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
-playertpwood.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
-playertpwood.Size = UDim2.new(0, 69, 0, 20)
-playertpwood.Font = Enum.Font.SourceSans
-playertpwood.Text = "CLICK"
-playertpwood.TextColor3 = Color3.fromRGB(255, 255, 255)
-playertpwood.TextSize = 14.000
-playertpwood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-framecartp.Name = "framecartp"
-framecartp.Parent = bgway
-framecartp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-framecartp.BorderColor3 = Color3.fromRGB(38, 38, 38)
-framecartp.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
-framecartp.Size = UDim2.new(0, 257, 0, 30)
-
-cartotp.Name = "cartotp"
-cartotp.Parent = framecartp
-cartotp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cartotp.BackgroundTransparency = 100.000
-cartotp.Position = UDim2.new(0.0272373538, 0, 0, 0)
-cartotp.Size = UDim2.new(0, 69, 0, 30)
-cartotp.ZIndex = -2
-cartotp.Font = Enum.Font.SourceSans
-cartotp.Text = "CAR TP"
-cartotp.TextColor3 = Color3.fromRGB(255, 255, 255)
-cartotp.TextSize = 14.000
-cartotp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-tpcarplace.Name = "tpcarplace"
-tpcarplace.Parent = framecartp
-tpcarplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-tpcarplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tpcarplace.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
-tpcarplace.Size = UDim2.new(0, 69, 0, 20)
-tpcarplace.Font = Enum.Font.SourceSans
-tpcarplace.Text = "CLICK"
-tpcarplace.TextColor3 = Color3.fromRGB(255, 255, 255)
-tpcarplace.TextSize = 14.000
-tpcarplace.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-framecartpwood.Name = "framecartpwood"
-framecartpwood.Parent = bgway
-framecartpwood.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-framecartpwood.BorderColor3 = Color3.fromRGB(38, 38, 38)
-framecartpwood.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
-framecartpwood.Size = UDim2.new(0, 257, 0, 30)
-
-TextLabel.Parent = framecartpwood
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 100.000
-TextLabel.Position = UDim2.new(0.0272373538, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 69, 0, 30)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "CAR TP WOOD"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
-TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-tpcarwood.Name = "tpcarwood"
-tpcarwood.Parent = framecartpwood
-tpcarwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-tpcarwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tpcarwood.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
-tpcarwood.Size = UDim2.new(0, 69, 0, 20)
-tpcarwood.Font = Enum.Font.SourceSans
-tpcarwood.Text = "CLICK"
-tpcarwood.TextColor3 = Color3.fromRGB(255, 255, 255)
-tpcarwood.TextSize = 14.000
-tpcarwood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-scrolltpplace.Name = "scrolltpplace"
-scrolltpplace.Parent = frameway
-scrolltpplace.Active = true
-scrolltpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-scrolltpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
-scrolltpplace.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
-scrolltpplace.Size = UDim2.new(0, 286, 0, 216)
-scrolltpplace.Visible = false
-scrolltpplace.ScrollBarThickness = 10
-
-WoodRUs.Name = "WoodRUs"
-WoodRUs.Parent = scrolltpplace
-WoodRUs.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-WoodRUs.Position = UDim2.new(0.063000001, 0, 0.103, 0)
-WoodRUs.Size = UDim2.new(0, 247, 0, 23)
-WoodRUs.Font = Enum.Font.SourceSans
-WoodRUs.Text = "WoodRUs"
-WoodRUs.TextColor3 = Color3.fromRGB(0, 0, 0)
-WoodRUs.TextSize = 14.000
-
-PowerShop.Name = "PowerShop"
-PowerShop.Parent = scrolltpplace
-PowerShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-PowerShop.Position = UDim2.new(0.063000001, 0, 0.592999995, 0)
-PowerShop.Size = UDim2.new(0, 247, 0, 23)
-PowerShop.Font = Enum.Font.SourceSans
-PowerShop.Text = "PowerShop"
-PowerShop.TextColor3 = Color3.fromRGB(0, 0, 0)
-PowerShop.TextSize = 14.000
-
-LogicShop.Name = "LogicShop"
-LogicShop.Parent = scrolltpplace
-LogicShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LogicShop.Position = UDim2.new(0.063000001, 0, 0.523000002, 0)
-LogicShop.Size = UDim2.new(0, 247, 0, 23)
-LogicShop.Font = Enum.Font.SourceSans
-LogicShop.Text = "LogicShop"
-LogicShop.TextColor3 = Color3.fromRGB(0, 0, 0)
-LogicShop.TextSize = 14.000
-
-BobsShack.Name = "BobsShack"
-BobsShack.Parent = scrolltpplace
-BobsShack.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-BobsShack.Position = UDim2.new(0.063000001, 0, 0.172999993, 0)
-BobsShack.Size = UDim2.new(0, 247, 0, 23)
-BobsShack.Font = Enum.Font.SourceSans
-BobsShack.Text = "BobsShack"
-BobsShack.TextColor3 = Color3.fromRGB(0, 0, 0)
-BobsShack.TextSize = 14.000
-
-LandStore.Name = "LandStore"
-LandStore.Parent = scrolltpplace
-LandStore.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LandStore.Position = UDim2.new(0.063000001, 0, 0.453000009, 0)
-LandStore.Size = UDim2.new(0, 247, 0, 23)
-LandStore.Font = Enum.Font.SourceSans
-LandStore.Text = "LandStore"
-LandStore.TextColor3 = Color3.fromRGB(0, 0, 0)
-LandStore.TextSize = 14.000
-
-ArtsShop.Name = "ArtsShop"
-ArtsShop.Parent = scrolltpplace
-ArtsShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-ArtsShop.Position = UDim2.new(0.063000001, 0, 0.312999994, 0)
-ArtsShop.Size = UDim2.new(0, 247, 0, 23)
-ArtsShop.Font = Enum.Font.SourceSans
-ArtsShop.Text = "ArtsShop"
-ArtsShop.TextColor3 = Color3.fromRGB(0, 0, 0)
-ArtsShop.TextSize = 14.000
-
-BoxedCar.Name = "BoxedCar"
-BoxedCar.Parent = scrolltpplace
-BoxedCar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-BoxedCar.Position = UDim2.new(0.063000001, 0, 0.243000001, 0)
-BoxedCar.Size = UDim2.new(0, 247, 0, 23)
-BoxedCar.Font = Enum.Font.SourceSans
-BoxedCar.Text = "BoxedCar"
-BoxedCar.TextColor3 = Color3.fromRGB(0, 0, 0)
-BoxedCar.TextSize = 14.000
-
-Furnishings.Name = "Furnishings"
-Furnishings.Parent = scrolltpplace
-Furnishings.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Furnishings.Position = UDim2.new(0.063000001, 0, 0.382999986, 0)
-Furnishings.Size = UDim2.new(0, 247, 0, 23)
-Furnishings.Font = Enum.Font.SourceSans
-Furnishings.Text = "Furnishings"
-Furnishings.TextColor3 = Color3.fromRGB(0, 0, 0)
-Furnishings.TextSize = 14.000
-
-TheDen.Name = "TheDen"
-TheDen.Parent = scrolltpplace
-TheDen.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-TheDen.Position = UDim2.new(0.063000001, 0, 0.662999988, 0)
-TheDen.Size = UDim2.new(0, 247, 0, 23)
-TheDen.Font = Enum.Font.SourceSans
-TheDen.Text = "TheDen"
-TheDen.TextColor3 = Color3.fromRGB(0, 0, 0)
-TheDen.TextSize = 14.000
-
-SkiLodge.Name = "SkiLodge"
-SkiLodge.Parent = scrolltpplace
-SkiLodge.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-SkiLodge.Position = UDim2.new(0.063000001, 0, 0.73299998, 0)
-SkiLodge.Size = UDim2.new(0, 247, 0, 23)
-SkiLodge.Font = Enum.Font.SourceSans
-SkiLodge.Text = "Ski Lodge"
-SkiLodge.TextColor3 = Color3.fromRGB(0, 0, 0)
-SkiLodge.TextSize = 14.000
-
-ShrineOfSight.Name = "ShrineOfSight"
-ShrineOfSight.Parent = scrolltpplace
-ShrineOfSight.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-ShrineOfSight.Position = UDim2.new(0.063000001, 0, 0.802999973, 0)
-ShrineOfSight.Size = UDim2.new(0, 247, 0, 23)
-ShrineOfSight.Font = Enum.Font.SourceSans
-ShrineOfSight.Text = "Shrine Of Sight"
-ShrineOfSight.TextColor3 = Color3.fromRGB(0, 0, 0)
-ShrineOfSight.TextSize = 14.000
-
-Bridge.Name = "Bridge"
-Bridge.Parent = scrolltpplace
-Bridge.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Bridge.Position = UDim2.new(0.063000001, 0, 0.873000026, 0)
-Bridge.Size = UDim2.new(0, 247, 0, 23)
-Bridge.Font = Enum.Font.SourceSans
-Bridge.Text = "Bridge"
-Bridge.TextColor3 = Color3.fromRGB(0, 0, 0)
-Bridge.TextSize = 14.000
-
-Dock.Name = "Dock"
-Dock.Parent = scrolltpplace
-Dock.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Dock.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Dock.Position = UDim2.new(0.063000001, 0, 0.943000019, 0)
-Dock.Size = UDim2.new(0, 247, 0, 23)
-Dock.Font = Enum.Font.SourceSans
-Dock.Text = "Dock"
-Dock.TextColor3 = Color3.fromRGB(0, 0, 0)
-Dock.TextSize = 14.000
-
-Spawnpoint.Name = "Spawnpoint"
-Spawnpoint.Parent = scrolltpplace
-Spawnpoint.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Spawnpoint.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Spawnpoint.Position = UDim2.new(0.062937066, 0, 0.0331439376, 0)
-Spawnpoint.Size = UDim2.new(0, 247, 0, 23)
-Spawnpoint.Font = Enum.Font.SourceSans
-Spawnpoint.Text = "Spawn"
-Spawnpoint.TextColor3 = Color3.fromRGB(0, 0, 0)
-Spawnpoint.TextSize = 14.000
-
-closeframetpplace.Name = "closeframetpplace"
-closeframetpplace.Parent = scrolltpplace
-closeframetpplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-closeframetpplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
-closeframetpplace.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
-closeframetpplace.Size = UDim2.new(0, 25, 0, 19)
-closeframetpplace.Font = Enum.Font.SourceSans
-closeframetpplace.Text = "X"
-closeframetpplace.TextColor3 = Color3.fromRGB(170, 0, 0)
-closeframetpplace.TextScaled = true
-closeframetpplace.TextSize = 14.000
-closeframetpplace.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
-closeframetpplace.TextWrapped = true
-
-Scrollingtpwoodcar.Name = "Scrollingtpwoodcar"
-Scrollingtpwoodcar.Parent = frameway
-Scrollingtpwoodcar.Active = true
-Scrollingtpwoodcar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Scrollingtpwoodcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Scrollingtpwoodcar.Position = UDim2.new(0.0450000018, 0, 0.112999998, 0)
-Scrollingtpwoodcar.Size = UDim2.new(0, 286, 0, 216)
-Scrollingtpwoodcar.Visible = false
-Scrollingtpwoodcar.CanvasPosition = Vector2.new(0, 298)
-Scrollingtpwoodcar.ScrollBarThickness = 10
-
-Birchcar.Name = "Birchcar"
-Birchcar.Parent = Scrollingtpwoodcar
-Birchcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Birchcar.Position = UDim2.new(0.0320000015, 0, 0.0329999998, 0)
-Birchcar.Size = UDim2.new(0, 254, 0, 23)
-Birchcar.Font = Enum.Font.SourceSans
-Birchcar.Text = "Birch"
-Birchcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Birchcar.TextSize = 14.000
-
-Cherrycar.Name = "Cherrycar"
-Cherrycar.Parent = Scrollingtpwoodcar
-Cherrycar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Cherrycar.Position = UDim2.new(0.0320000015, 0, 0.0930000022, 0)
-Cherrycar.Size = UDim2.new(0, 254, 0, 23)
-Cherrycar.Font = Enum.Font.SourceSans
-Cherrycar.Text = "Cherry"
-Cherrycar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Cherrycar.TextSize = 14.000
-
-Genericcar.Name = "Genericcar"
-Genericcar.Parent = Scrollingtpwoodcar
-Genericcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Genericcar.Position = UDim2.new(0.0320000015, 0, 0.273000002, 0)
-Genericcar.Size = UDim2.new(0, 254, 0, 23)
-Genericcar.Font = Enum.Font.SourceSans
-Genericcar.Text = "Generic"
-Genericcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Genericcar.TextSize = 14.000
-
-Greencar.Name = "Greencar"
-Greencar.Parent = Scrollingtpwoodcar
-Greencar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Greencar.Position = UDim2.new(0.0320000015, 0, 0.152999997, 0)
-Greencar.Size = UDim2.new(0, 254, 0, 23)
-Greencar.Font = Enum.Font.SourceSans
-Greencar.Text = "Green"
-Greencar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Greencar.TextSize = 14.000
-
-Koacar.Name = "Koacar"
-Koacar.Parent = Scrollingtpwoodcar
-Koacar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Koacar.Position = UDim2.new(0.0320000015, 0, 0.813000023, 0)
-Koacar.Size = UDim2.new(0, 254, 0, 23)
-Koacar.Font = Enum.Font.SourceSans
-Koacar.Text = "Koa"
-Koacar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Koacar.TextSize = 14.000
-
-Goldcar.Name = "Goldcar"
-Goldcar.Parent = Scrollingtpwoodcar
-Goldcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Goldcar.Position = UDim2.new(0.0320000015, 0, 0.933000028, 0)
-Goldcar.Size = UDim2.new(0, 254, 0, 23)
-Goldcar.Font = Enum.Font.SourceSans
-Goldcar.Text = "Gold"
-Goldcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Goldcar.TextSize = 14.000
-
-Fircar.Name = "Fircar"
-Fircar.Parent = Scrollingtpwoodcar
-Fircar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Fircar.Position = UDim2.new(0.0320000015, 0, 0.513000011, 0)
-Fircar.Size = UDim2.new(0, 254, 0, 23)
-Fircar.Font = Enum.Font.SourceSans
-Fircar.Text = "Fir"
-Fircar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fircar.TextSize = 14.000
-
-CaveCrawlercar.Name = "CaveCrawlercar"
-CaveCrawlercar.Parent = Scrollingtpwoodcar
-CaveCrawlercar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-CaveCrawlercar.Position = UDim2.new(0.0320000015, 0, 0.453000009, 0)
-CaveCrawlercar.Size = UDim2.new(0, 254, 0, 23)
-CaveCrawlercar.Font = Enum.Font.SourceSans
-CaveCrawlercar.Text = "CaveCrawler"
-CaveCrawlercar.TextColor3 = Color3.fromRGB(0, 0, 0)
-CaveCrawlercar.TextSize = 14.000
-
-LoneCavecar.Name = "LoneCavecar"
-LoneCavecar.Parent = Scrollingtpwoodcar
-LoneCavecar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LoneCavecar.Position = UDim2.new(0.0320000015, 0, 0.873000026, 0)
-LoneCavecar.Size = UDim2.new(0, 254, 0, 23)
-LoneCavecar.Font = Enum.Font.SourceSans
-LoneCavecar.Text = "LoneCave"
-LoneCavecar.TextColor3 = Color3.fromRGB(0, 0, 0)
-LoneCavecar.TextSize = 14.000
-
-Oakcar.Name = "Oakcar"
-Oakcar.Parent = Scrollingtpwoodcar
-Oakcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Oakcar.Position = UDim2.new(0.0320000015, 0, 0.633000016, 0)
-Oakcar.Size = UDim2.new(0, 254, 0, 23)
-Oakcar.Font = Enum.Font.SourceSans
-Oakcar.Text = "Oak"
-Oakcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Oakcar.TextSize = 14.000
-
-Palmcar.Name = "Palmcar"
-Palmcar.Parent = Scrollingtpwoodcar
-Palmcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Palmcar.Position = UDim2.new(0.0320000015, 0, 0.333000004, 0)
-Palmcar.Size = UDim2.new(0, 254, 0, 23)
-Palmcar.Font = Enum.Font.SourceSans
-Palmcar.Text = "Palm"
-Palmcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Palmcar.TextSize = 14.000
-
-Pinecar.Name = "Pinecar"
-Pinecar.Parent = Scrollingtpwoodcar
-Pinecar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Pinecar.Position = UDim2.new(0.0320000015, 0, 0.573000014, 0)
-Pinecar.Size = UDim2.new(0, 254, 0, 23)
-Pinecar.Font = Enum.Font.SourceSans
-Pinecar.Text = "Pine"
-Pinecar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Pinecar.TextSize = 14.000
-
-SnowGlowcar.Name = "SnowGlowcar"
-SnowGlowcar.Parent = Scrollingtpwoodcar
-SnowGlowcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-SnowGlowcar.Position = UDim2.new(0.0320000015, 0, 0.213, 0)
-SnowGlowcar.Size = UDim2.new(0, 254, 0, 23)
-SnowGlowcar.Font = Enum.Font.SourceSans
-SnowGlowcar.Text = "SnowGlow"
-SnowGlowcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-SnowGlowcar.TextSize = 14.000
-
-Volcanocar.Name = "Volcanocar"
-Volcanocar.Parent = Scrollingtpwoodcar
-Volcanocar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Volcanocar.Position = UDim2.new(0.0320000015, 0, 0.393000007, 0)
-Volcanocar.Size = UDim2.new(0, 254, 0, 23)
-Volcanocar.Font = Enum.Font.SourceSans
-Volcanocar.Text = "Volcano"
-Volcanocar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Volcanocar.TextSize = 14.000
-
-Walnutcar.Name = "Walnutcar"
-Walnutcar.Parent = Scrollingtpwoodcar
-Walnutcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Walnutcar.Position = UDim2.new(0.0320000015, 0, 0.753000021, 0)
-Walnutcar.Size = UDim2.new(0, 254, 0, 23)
-Walnutcar.Font = Enum.Font.SourceSans
-Walnutcar.Text = "Walnut"
-Walnutcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Walnutcar.TextSize = 14.000
-
-closescrolltpwoodcar.Name = "closescrolltpwoodcar"
-closescrolltpwoodcar.Parent = Scrollingtpwoodcar
-closescrolltpwoodcar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-closescrolltpwoodcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-closescrolltpwoodcar.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
-closescrolltpwoodcar.Size = UDim2.new(0, 25, 0, 19)
-closescrolltpwoodcar.Font = Enum.Font.SourceSans
-closescrolltpwoodcar.Text = "X"
-closescrolltpwoodcar.TextColor3 = Color3.fromRGB(170, 0, 0)
-closescrolltpwoodcar.TextScaled = true
-closescrolltpwoodcar.TextSize = 14.000
-closescrolltpwoodcar.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
-closescrolltpwoodcar.TextWrapped = true
-
-Frostcar.Name = "Frostcar"
-Frostcar.Parent = Scrollingtpwoodcar
-Frostcar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Frostcar.Position = UDim2.new(0.0320000015, 0, 0.693000019, 0)
-Frostcar.Size = UDim2.new(0, 254, 0, 23)
-Frostcar.Font = Enum.Font.SourceSans
-Frostcar.Text = "Frost"
-Frostcar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Frostcar.TextSize = 14.000
-
-scrolltpplacecar.Name = "scrolltpplacecar"
-scrolltpplacecar.Parent = frameway
-scrolltpplacecar.Active = true
-scrolltpplacecar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-scrolltpplacecar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-scrolltpplacecar.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
-scrolltpplacecar.Size = UDim2.new(0, 286, 0, 216)
-scrolltpplacecar.Visible = false
-scrolltpplacecar.ScrollBarThickness = 10
-
-WoodRUs_2.Name = "WoodRUs"
-WoodRUs_2.Parent = scrolltpplacecar
-WoodRUs_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-WoodRUs_2.Position = UDim2.new(0.063000001, 0, 0.103, 0)
-WoodRUs_2.Size = UDim2.new(0, 247, 0, 23)
-WoodRUs_2.Font = Enum.Font.SourceSans
-WoodRUs_2.Text = "WoodRUs"
-WoodRUs_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-WoodRUs_2.TextSize = 14.000
-
-PowerShop_2.Name = "PowerShop"
-PowerShop_2.Parent = scrolltpplacecar
-PowerShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-PowerShop_2.Position = UDim2.new(0.063000001, 0, 0.592999995, 0)
-PowerShop_2.Size = UDim2.new(0, 247, 0, 23)
-PowerShop_2.Font = Enum.Font.SourceSans
-PowerShop_2.Text = "PowerShop"
-PowerShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-PowerShop_2.TextSize = 14.000
-
-LogicShop_2.Name = "LogicShop"
-LogicShop_2.Parent = scrolltpplacecar
-LogicShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LogicShop_2.Position = UDim2.new(0.063000001, 0, 0.523000002, 0)
-LogicShop_2.Size = UDim2.new(0, 247, 0, 23)
-LogicShop_2.Font = Enum.Font.SourceSans
-LogicShop_2.Text = "LogicShop"
-LogicShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-LogicShop_2.TextSize = 14.000
-
-BobsShack_2.Name = "BobsShack"
-BobsShack_2.Parent = scrolltpplacecar
-BobsShack_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-BobsShack_2.Position = UDim2.new(0.063000001, 0, 0.172999993, 0)
-BobsShack_2.Size = UDim2.new(0, 247, 0, 23)
-BobsShack_2.Font = Enum.Font.SourceSans
-BobsShack_2.Text = "BobsShack"
-BobsShack_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-BobsShack_2.TextSize = 14.000
-
-LandStore_2.Name = "LandStore"
-LandStore_2.Parent = scrolltpplacecar
-LandStore_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LandStore_2.Position = UDim2.new(0.063000001, 0, 0.453000009, 0)
-LandStore_2.Size = UDim2.new(0, 247, 0, 23)
-LandStore_2.Font = Enum.Font.SourceSans
-LandStore_2.Text = "LandStore"
-LandStore_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-LandStore_2.TextSize = 14.000
-
-ArtsShop_2.Name = "ArtsShop"
-ArtsShop_2.Parent = scrolltpplacecar
-ArtsShop_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-ArtsShop_2.Position = UDim2.new(0.063000001, 0, 0.312999994, 0)
-ArtsShop_2.Size = UDim2.new(0, 247, 0, 23)
-ArtsShop_2.Font = Enum.Font.SourceSans
-ArtsShop_2.Text = "ArtsShop"
-ArtsShop_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-ArtsShop_2.TextSize = 14.000
-
-BoxedCar_2.Name = "BoxedCar"
-BoxedCar_2.Parent = scrolltpplacecar
-BoxedCar_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-BoxedCar_2.Position = UDim2.new(0.063000001, 0, 0.243000001, 0)
-BoxedCar_2.Size = UDim2.new(0, 247, 0, 23)
-BoxedCar_2.Font = Enum.Font.SourceSans
-BoxedCar_2.Text = "BoxedCar"
-BoxedCar_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-BoxedCar_2.TextSize = 14.000
-
-Furnishings_2.Name = "Furnishings"
-Furnishings_2.Parent = scrolltpplacecar
-Furnishings_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Furnishings_2.Position = UDim2.new(0.063000001, 0, 0.382999986, 0)
-Furnishings_2.Size = UDim2.new(0, 247, 0, 23)
-Furnishings_2.Font = Enum.Font.SourceSans
-Furnishings_2.Text = "Furnishings"
-Furnishings_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Furnishings_2.TextSize = 14.000
-
-TheDen_2.Name = "TheDen"
-TheDen_2.Parent = scrolltpplacecar
-TheDen_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-TheDen_2.Position = UDim2.new(0.063000001, 0, 0.662999988, 0)
-TheDen_2.Size = UDim2.new(0, 247, 0, 23)
-TheDen_2.Font = Enum.Font.SourceSans
-TheDen_2.Text = "TheDen"
-TheDen_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TheDen_2.TextSize = 14.000
-
-SkiLodge_2.Name = "SkiLodge"
-SkiLodge_2.Parent = scrolltpplacecar
-SkiLodge_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-SkiLodge_2.Position = UDim2.new(0.063000001, 0, 0.73299998, 0)
-SkiLodge_2.Size = UDim2.new(0, 247, 0, 23)
-SkiLodge_2.Font = Enum.Font.SourceSans
-SkiLodge_2.Text = "Ski Lodge"
-SkiLodge_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-SkiLodge_2.TextSize = 14.000
-
-ShrineOfSight_2.Name = "ShrineOfSight"
-ShrineOfSight_2.Parent = scrolltpplacecar
-ShrineOfSight_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-ShrineOfSight_2.Position = UDim2.new(0.063000001, 0, 0.802999973, 0)
-ShrineOfSight_2.Size = UDim2.new(0, 247, 0, 23)
-ShrineOfSight_2.Font = Enum.Font.SourceSans
-ShrineOfSight_2.Text = "Shrine Of Sight"
-ShrineOfSight_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-ShrineOfSight_2.TextSize = 14.000
-
-Bridge_2.Name = "Bridge"
-Bridge_2.Parent = scrolltpplacecar
-Bridge_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Bridge_2.Position = UDim2.new(0.063000001, 0, 0.873000026, 0)
-Bridge_2.Size = UDim2.new(0, 247, 0, 23)
-Bridge_2.Font = Enum.Font.SourceSans
-Bridge_2.Text = "Bridge"
-Bridge_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Bridge_2.TextSize = 14.000
-
-Dock_2.Name = "Dock"
-Dock_2.Parent = scrolltpplacecar
-Dock_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Dock_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Dock_2.Position = UDim2.new(0.063000001, 0, 0.943000019, 0)
-Dock_2.Size = UDim2.new(0, 247, 0, 23)
-Dock_2.Font = Enum.Font.SourceSans
-Dock_2.Text = "Dock"
-Dock_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Dock_2.TextSize = 14.000
-
-Spawnpoint_2.Name = "Spawnpoint"
-Spawnpoint_2.Parent = scrolltpplacecar
-Spawnpoint_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Spawnpoint_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Spawnpoint_2.Position = UDim2.new(0.062937066, 0, 0.0331439376, 0)
-Spawnpoint_2.Size = UDim2.new(0, 247, 0, 23)
-Spawnpoint_2.Font = Enum.Font.SourceSans
-Spawnpoint_2.Text = "Spawn"
-Spawnpoint_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Spawnpoint_2.TextSize = 14.000
-
-closeframetpplacecar.Name = "closeframetpplacecar"
-closeframetpplacecar.Parent = scrolltpplacecar
-closeframetpplacecar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-closeframetpplacecar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-closeframetpplacecar.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
-closeframetpplacecar.Size = UDim2.new(0, 25, 0, 19)
-closeframetpplacecar.Font = Enum.Font.SourceSans
-closeframetpplacecar.Text = "X"
-closeframetpplacecar.TextColor3 = Color3.fromRGB(170, 0, 0)
-closeframetpplacecar.TextScaled = true
-closeframetpplacecar.TextSize = 14.000
-closeframetpplacecar.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
-closeframetpplacecar.TextWrapped = true
-
-Scrollingtpwood.Name = "Scrollingtpwood"
-Scrollingtpwood.Parent = frameway
-Scrollingtpwood.Active = true
-Scrollingtpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Scrollingtpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Scrollingtpwood.Position = UDim2.new(0.0450000018, 0, 0.112999998, 0)
-Scrollingtpwood.Size = UDim2.new(0, 286, 0, 216)
-Scrollingtpwood.Visible = false
-Scrollingtpwood.ScrollBarThickness = 10
-
-Birch.Name = "Birch"
-Birch.Parent = Scrollingtpwood
-Birch.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Birch.Position = UDim2.new(0.0320000015, 0, 0.0329999998, 0)
-Birch.Size = UDim2.new(0, 254, 0, 23)
-Birch.Font = Enum.Font.SourceSans
-Birch.Text = "Birch"
-Birch.TextColor3 = Color3.fromRGB(0, 0, 0)
-Birch.TextSize = 14.000
-
-Cherry.Name = "Cherry"
-Cherry.Parent = Scrollingtpwood
-Cherry.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Cherry.Position = UDim2.new(0.0320000015, 0, 0.0930000022, 0)
-Cherry.Size = UDim2.new(0, 254, 0, 23)
-Cherry.Font = Enum.Font.SourceSans
-Cherry.Text = "Cherry"
-Cherry.TextColor3 = Color3.fromRGB(0, 0, 0)
-Cherry.TextSize = 14.000
-
-Generic.Name = "Generic"
-Generic.Parent = Scrollingtpwood
-Generic.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Generic.Position = UDim2.new(0.0320000015, 0, 0.273000002, 0)
-Generic.Size = UDim2.new(0, 254, 0, 23)
-Generic.Font = Enum.Font.SourceSans
-Generic.Text = "Generic"
-Generic.TextColor3 = Color3.fromRGB(0, 0, 0)
-Generic.TextSize = 14.000
-
-Green.Name = "Green"
-Green.Parent = Scrollingtpwood
-Green.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Green.Position = UDim2.new(0.0320000015, 0, 0.152999997, 0)
-Green.Size = UDim2.new(0, 254, 0, 23)
-Green.Font = Enum.Font.SourceSans
-Green.Text = "Green"
-Green.TextColor3 = Color3.fromRGB(0, 0, 0)
-Green.TextSize = 14.000
-
-Koa.Name = "Koa"
-Koa.Parent = Scrollingtpwood
-Koa.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Koa.Position = UDim2.new(0.0320000015, 0, 0.813000023, 0)
-Koa.Size = UDim2.new(0, 254, 0, 23)
-Koa.Font = Enum.Font.SourceSans
-Koa.Text = "Koa"
-Koa.TextColor3 = Color3.fromRGB(0, 0, 0)
-Koa.TextSize = 14.000
-
-Gold.Name = "Gold"
-Gold.Parent = Scrollingtpwood
-Gold.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Gold.Position = UDim2.new(0.0320000015, 0, 0.933000028, 0)
-Gold.Size = UDim2.new(0, 254, 0, 23)
-Gold.Font = Enum.Font.SourceSans
-Gold.Text = "Gold"
-Gold.TextColor3 = Color3.fromRGB(0, 0, 0)
-Gold.TextSize = 14.000
-
-Fir.Name = "Fir"
-Fir.Parent = Scrollingtpwood
-Fir.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Fir.Position = UDim2.new(0.0320000015, 0, 0.513000011, 0)
-Fir.Size = UDim2.new(0, 254, 0, 23)
-Fir.Font = Enum.Font.SourceSans
-Fir.Text = "Fir"
-Fir.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fir.TextSize = 14.000
-
-CaveCrawler.Name = "CaveCrawler"
-CaveCrawler.Parent = Scrollingtpwood
-CaveCrawler.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-CaveCrawler.Position = UDim2.new(0.0320000015, 0, 0.453000009, 0)
-CaveCrawler.Size = UDim2.new(0, 254, 0, 23)
-CaveCrawler.Font = Enum.Font.SourceSans
-CaveCrawler.Text = "CaveCrawler"
-CaveCrawler.TextColor3 = Color3.fromRGB(0, 0, 0)
-CaveCrawler.TextSize = 14.000
-
-LoneCave.Name = "LoneCave"
-LoneCave.Parent = Scrollingtpwood
-LoneCave.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-LoneCave.Position = UDim2.new(0.0320000015, 0, 0.873000026, 0)
-LoneCave.Size = UDim2.new(0, 254, 0, 23)
-LoneCave.Font = Enum.Font.SourceSans
-LoneCave.Text = "LoneCave"
-LoneCave.TextColor3 = Color3.fromRGB(0, 0, 0)
-LoneCave.TextSize = 14.000
-
-Oak.Name = "Oak"
-Oak.Parent = Scrollingtpwood
-Oak.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Oak.Position = UDim2.new(0.0320000015, 0, 0.633000016, 0)
-Oak.Size = UDim2.new(0, 254, 0, 23)
-Oak.Font = Enum.Font.SourceSans
-Oak.Text = "Oak"
-Oak.TextColor3 = Color3.fromRGB(0, 0, 0)
-Oak.TextSize = 14.000
-
-Palm.Name = "Palm"
-Palm.Parent = Scrollingtpwood
-Palm.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Palm.Position = UDim2.new(0.0320000015, 0, 0.333000004, 0)
-Palm.Size = UDim2.new(0, 254, 0, 23)
-Palm.Font = Enum.Font.SourceSans
-Palm.Text = "Palm"
-Palm.TextColor3 = Color3.fromRGB(0, 0, 0)
-Palm.TextSize = 14.000
-
-Pine.Name = "Pine"
-Pine.Parent = Scrollingtpwood
-Pine.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Pine.Position = UDim2.new(0.0320000015, 0, 0.573000014, 0)
-Pine.Size = UDim2.new(0, 254, 0, 23)
-Pine.Font = Enum.Font.SourceSans
-Pine.Text = "Pine"
-Pine.TextColor3 = Color3.fromRGB(0, 0, 0)
-Pine.TextSize = 14.000
-
-SnowGlow.Name = "SnowGlow"
-SnowGlow.Parent = Scrollingtpwood
-SnowGlow.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-SnowGlow.Position = UDim2.new(0.0320000015, 0, 0.213, 0)
-SnowGlow.Size = UDim2.new(0, 254, 0, 23)
-SnowGlow.Font = Enum.Font.SourceSans
-SnowGlow.Text = "SnowGlow"
-SnowGlow.TextColor3 = Color3.fromRGB(0, 0, 0)
-SnowGlow.TextSize = 14.000
-
-Volcano.Name = "Volcano"
-Volcano.Parent = Scrollingtpwood
-Volcano.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Volcano.Position = UDim2.new(0.0320000015, 0, 0.393000007, 0)
-Volcano.Size = UDim2.new(0, 254, 0, 23)
-Volcano.Font = Enum.Font.SourceSans
-Volcano.Text = "Volcano"
-Volcano.TextColor3 = Color3.fromRGB(0, 0, 0)
-Volcano.TextSize = 14.000
-
-Walnut.Name = "Walnut"
-Walnut.Parent = Scrollingtpwood
-Walnut.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Walnut.Position = UDim2.new(0.0320000015, 0, 0.753000021, 0)
-Walnut.Size = UDim2.new(0, 254, 0, 23)
-Walnut.Font = Enum.Font.SourceSans
-Walnut.Text = "Walnut"
-Walnut.TextColor3 = Color3.fromRGB(0, 0, 0)
-Walnut.TextSize = 14.000
-
-closescrolltpwood.Name = "closescrolltpwood"
-closescrolltpwood.Parent = Scrollingtpwood
-closescrolltpwood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-closescrolltpwood.BorderColor3 = Color3.fromRGB(0, 0, 0)
-closescrolltpwood.Position = UDim2.new(-0.00761232199, 0, -0.00925925933, 0)
-closescrolltpwood.Size = UDim2.new(0, 25, 0, 19)
-closescrolltpwood.Font = Enum.Font.SourceSans
-closescrolltpwood.Text = "X"
-closescrolltpwood.TextColor3 = Color3.fromRGB(170, 0, 0)
-closescrolltpwood.TextScaled = true
-closescrolltpwood.TextSize = 14.000
-closescrolltpwood.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
-closescrolltpwood.TextWrapped = true
-
-Frost.Name = "Frost"
-Frost.Parent = Scrollingtpwood
-Frost.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Frost.Position = UDim2.new(0.0320000015, 0, 0.693000019, 0)
-Frost.Size = UDim2.new(0, 254, 0, 23)
-Frost.Font = Enum.Font.SourceSans
-Frost.Text = "Frost"
-Frost.TextColor3 = Color3.fromRGB(0, 0, 0)
-Frost.TextSize = 14.000
-
 closeframegui.Name = "closeframegui"
 closeframegui.Parent = framegui
 closeframegui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
@@ -2053,8 +2193,7 @@ openframegui.Text = "OPEN"
 openframegui.TextColor3 = Color3.fromRGB(255, 255, 255)
 openframegui.TextSize = 14.000
 
-
-----------------script------------
+---------------------------------------script---------------------------
 
 openframegui.MouseButton1Click:Connect(function()
 	framegui.Visible = true
@@ -2067,31 +2206,224 @@ closeframegui.MouseButton1Click:Connect(function()
 end)
 
 buttonguiinfo.MouseButton1Click:Connect(function()
-	frameway.Visible = false
-	scrollchar.Visible = false
-	frameland.Visible = false
 	frameinfo.Visible = true
+	listtele.Visible = false
+	SF.Visible = false
+	Scrollingtpwood.Visible = false
+	Scrollingtpwoodcar.Visible = false
+	framedonateslot.Visible = false
+	scrolltpplace.Visible = false
+	scrolltpplacecar.Visible = false
+	teleport.Visible = false
+	textland.Visible = false
+	waypoint.Visible = false
+	load.Visible = false
+	loadbase.Visible = false
+	setkoordinat.Visible = false
+	tpcarwood.Visible = false
+	tptokoordinat.Visible = false
+	textcartptowood.Visible = false
+	freeland.Visible = false
+	maxland.Visible = false
+	playertpplace.Visible = false
+	playertp.Visible = false
+	Dupe.Visible = false
+	SL.Visible = false
+	tpcarplace.Visible = false
+	tptobase.Visible = false
+	tptoplayer.Visible = false
+	cartotp.Visible = false
+	openguidonatebase.Visible = false
+	playertpwood.Visible = false
+	donatebasetext.Visible = false
+	tptowood.Visible = false
+	scrollchar.Visible = false
+	textguiinfo.Visible = true
+	uiby.Visible = true
+	test.Visible = true
+	guiby.Visible = true
+	koordinat.Visible = false
+	listplayerbut.Visible = false
+	nameplayer.Visible = false
 end)
 
 misccharacter.MouseButton1Click:Connect(function()
 	frameinfo.Visible = false
-	frameway.Visible = false
-	frameland.Visible = false
+	listtele.Visible = false
+	SF.Visible = false
+	Scrollingtpwood.Visible = false
+	Scrollingtpwoodcar.Visible = false
+	framedonateslot.Visible = false
+	scrolltpplace.Visible = false
+	scrolltpplacecar.Visible = false
+	teleport.Visible = false
+	textland.Visible = false
+	waypoint.Visible = false
+	load.Visible = false
+	loadbase.Visible = false
+	setkoordinat.Visible = false
+	tpcarwood.Visible = false
+	tptokoordinat.Visible = false
+	textcartptowood.Visible = false
+	freeland.Visible = false
+	maxland.Visible = false
+	playertpplace.Visible = false
+	playertp.Visible = false
+	Dupe.Visible = false
+	SL.Visible = false
+	tpcarplace.Visible = false
+	tptobase.Visible = false
+	tptoplayer.Visible = false
+	cartotp.Visible = false
+	openguidonatebase.Visible = false
+	playertpwood.Visible = false
+	donatebasetext.Visible = false
+	tptowood.Visible = false
 	scrollchar.Visible = true
+	koordinat.Visible = false
+	listplayerbut.Visible = false
+	nameplayer.Visible = false
 end)
 
 miscland.MouseButton1Click:Connect(function()
-	frameinfo.Visible = false
-	frameway.Visible = false
-	frameland.Visible = true
+	donatebasetext.Visible = true
+	frameinfo.Visible = true
+	SF.Visible = false
+	openguidonatebase.Visible = true
+	SL.Visible = true
+	Dupe.Visible = true
+	freeland.Visible = true
+	maxland.Visible = true
+	load.Visible = true
+	loadbase.Visible = true
+	textland.Visible = true
+	setkoordinat.Visible = false
+	tpcarwood.Visible = false
+	tptokoordinat.Visible = false
+	textcartptowood.Visible = false
+	scrolltpplacecar.Visible = false
+	teleport.Visible = false
+	waypoint.Visible = false
+	playertpplace.Visible = false
+	playertp.Visible = false
+	scrolltpplace.Visible = false
+	framedonateslot.Visible = false
+	tpcarplace.Visible = false
+	tptobase.Visible = false
+	tptoplayer.Visible = false
+	cartotp.Visible = false
+	Scrollingtpwoodcar.Visible = false
+	playertpwood.Visible = false
+	Scrollingtpwood.Visible = false
+	tptowood.Visible = false
 	scrollchar.Visible = false
+	listtele.Visible = false
+	textguiinfo.Visible = false
+	uiby.Visible = false
+	test.Visible = false
+	guiby.Visible = false
+	koordinat.Visible = false
+	listplayerbut.Visible = false
+	nameplayer.Visible = false
 end)
 
 miscwaypoint.MouseButton1Click:Connect(function()
-	frameinfo.Visible = false
-	frameway.Visible = true
-	frameland.Visible = false
+	listtele.Visible = false
+	SF.Visible = false
+	Scrollingtpwood.Visible = false
+	Scrollingtpwoodcar.Visible = false
+	framedonateslot.Visible = false
+	scrolltpplace.Visible = false
+	scrolltpplacecar.Visible = false
+	teleport.Visible = false
+	textland.Visible = false
+	waypoint.Visible = true
+	load.Visible = false
+	loadbase.Visible = false
+	setkoordinat.Visible = false
+	tpcarwood.Visible = true
+	tptokoordinat.Visible = false
+	textcartptowood.Visible = true
+	freeland.Visible = false
+	maxland.Visible = false
+	playertpplace.Visible = true
+	playertp.Visible = true
+	Dupe.Visible = false
+	SL.Visible = false
+	tpcarplace.Visible = true
+	tptobase.Visible = false
+	tptoplayer.Visible = false
+	cartotp.Visible = true
+	openguidonatebase.Visible = false
+	playertpwood.Visible = true
+	donatebasetext.Visible = false
+	tptowood.Visible = true
 	scrollchar.Visible = false
+	textguiinfo.Visible = false
+	uiby.Visible = false
+	test.Visible = false
+	guiby.Visible = false
+	koordinat.Visible = false
+	listplayerbut.Visible = false
+	nameplayer.Visible = false
+end)
+
+teleportbutton.MouseButton1Click:Connect(function()
+	frameinfo.Visible = true
+	listtele.Visible = false
+	SF.Visible = false
+	Scrollingtpwood.Visible = false
+	Scrollingtpwoodcar.Visible = false
+	framedonateslot.Visible = false
+	scrolltpplace.Visible = false
+	scrolltpplacecar.Visible = false
+	teleport.Visible = true
+	textland.Visible = false
+	waypoint.Visible = false
+	load.Visible = false
+	loadbase.Visible = false
+	setkoordinat.Visible = true
+	tpcarwood.Visible = false
+	tptokoordinat.Visible = true
+	textcartptowood.Visible = false
+	freeland.Visible = false
+	maxland.Visible = false
+	playertpplace.Visible = false
+	playertp.Visible = false
+	Dupe.Visible = false
+	SL.Visible = false
+	tpcarplace.Visible = false
+	tptobase.Visible = true
+	tptoplayer.Visible = true
+	cartotp.Visible = false
+	openguidonatebase.Visible = false
+	playertpwood.Visible = false
+	donatebasetext.Visible = false
+	tptowood.Visible = false
+	scrollchar.Visible = false
+	textguiinfo.Visible = false
+	uiby.Visible = false
+	test.Visible = false
+	guiby.Visible = false
+	koordinat.Visible = true
+	listplayerbut.Visible = true
+	nameplayer.Visible = true
+end)
+
+walkspeed.MouseButton1Click:Connect(function()
+	wsframe.Visible = true
+end)
+
+wsclose.MouseButton1Click:Connect(function()
+	wsframe.Visible = false
+end)
+
+jumppower.MouseButton1Click:Connect(function()
+	jpframe.Visible = true
+end)
+
+jpclose.MouseButton1Click:Connect(function()
+	jpframe.Visible = false
 end)
 
 openguidonatebase.MouseButton1Click:Connect(function()
@@ -2100,6 +2432,10 @@ end)
 
 closedonateslot.MouseButton1Click:Connect(function()
 	framedonateslot.Visible = false
+end)
+
+SL.MouseButton1Click:Connect(function()
+	SF.Visible = true
 end)
 
 playertpplace.MouseButton1Click:Connect(function()
@@ -2134,11 +2470,127 @@ closescrolltpwoodcar.MouseButton1Click:Connect(function()
 	Scrollingtpwoodcar.Visible = false
 end)
 
+listplayerbut.MouseButton1Click:Connect(function()
+	listtele.Visible = true
+end)
 
+player1.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
 
+player2.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
+
+player3.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
+
+player4.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
+
+player5.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
+
+player6.MouseButton1Click:Connect(function()
+	listtele.Visible = false
+end)
 
 -----------------------------------------------------------------------------------------
 
+
+
+--- Player Tp ---
+
+local buttons = {
+	player1,
+	player2,
+	player3,
+	player4,
+	player5,
+	player6
+}
+spawn(function()
+	while true do
+		player1.Text = ""
+		player2.Text = ""
+		player3.Text = ""
+		player4.Text = ""
+		player5.Text = ""
+		player6.Text = ""
+		for i, v in pairs(game.Players:GetChildren()) do
+			buttons[i].Text = v.Name
+			buttons[i].Visible = true
+		end
+		wait(0.5)
+	end
+end)
+
+player1.MouseButton1Down:connect(function()
+	nameplayer.Text = player1.Text
+end)
+player2.MouseButton1Down:connect(function()
+	nameplayer.Text = player2.Text
+end)
+player3.MouseButton1Down:connect(function()
+	nameplayer.Text = player3.Text
+end)
+player4.MouseButton1Down:connect(function()
+	nameplayer.Text = player4.Text
+end)
+player5.MouseButton1Down:connect(function()
+	nameplayer.Text = player5.Text
+end)
+player6.MouseButton1Down:connect(function()
+	nameplayer.Text = player6.Text
+end)
+
+tptoplayer.MouseButton1Down:connect(function()
+	if nameplayer.Text == "SELECT A PLAYER" then
+		warn("No Player Selected")
+	else
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[nameplayer.Text].HumanoidRootPart.CFrame
+	end
+end)
+
+tptobase.MouseButton1Down:connect(function()
+	for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players[nameplayer.Text] then
+			local p= CFrame.new(v.OriginSquare.CFrame.x, v.OriginSquare.CFrame.y +3.5, v.OriginSquare.CFrame.z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p
+		end
+	end
+end)
+
+----------------------------------------------------------------------------------------
+--- Show Current Location
+
+setkoordinat.MouseButton1Down:connect(function()
+
+	function round(num, numDecimalPlaces)
+		local mult = 10^(numDecimalPlaces or 0)
+		return math.floor(num * mult + 0.5) / mult
+	end
+
+	LocationX = round(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.x, 1)
+	LocationY = round(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y, 1)
+	LocationZ = round(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.z, 1)
+	koordinat.Text = "Current/Set Location\n"..LocationX..", "..LocationY..", "..LocationZ
+	koordinat.Text = "TP to "..LocationX..", "..LocationY..", "..LocationZ
+	CustomLocationSet = true
+end)
+
+--- TP to custom location ---
+
+tptokoordinat.MouseButton1Down:connect(function()
+	if CustomLocationSet == true then
+		local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+		uTorso.CFrame = CFrame.new(LocationX, LocationY, LocationZ)
+	end
+end)
+-----------------------------------------------------------------------------------------
 
 
 local WayPoints = {
@@ -2513,7 +2965,9 @@ Bridge_2.MouseButton1Down:connect(function()
 	TeleportCar(
 		CFrame.new(113, 15, -977))
 end)
+
 ----------wood-----------------------------
+
 Birchcar.MouseButton1Down:connect(function()
 	TeleportCar(
 		CFrame.new(-1219.2,295.4,836.1))
@@ -2594,7 +3048,8 @@ Walnutcar.MouseButton1Down:connect(function()
 		CFrame.new(-351.2,17.8,-2415.2))
 end)
 
---------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
 
 
 
